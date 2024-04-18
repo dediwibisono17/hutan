@@ -82,3 +82,15 @@
         }
     }
 }
+
+.txt{
+    width: fit-content;
+    padding: 8px;
+    font-size: 1.5rem;
+    &-bg {
+        &-hijau {
+            background: #739200;
+            color: white;
+        }
+    }
+}
