@@ -42,7 +42,10 @@
             width: 460px;
             @media screen and (max-width:768px) {
                 bottom: 100px;
-                width: auto;
+                width: 80%;
+            }
+            @media screen and (max-width:400px) {
+                bottom: 32px;
             }
             // border: 2px solid;
             // height: auto;
@@ -62,11 +65,11 @@
             width: 460px;
 
             @media screen and (max-width:768px) {
-                bottom: 250px;
-                width: auto;
+                bottom: 336px;
+                width: 80%;
             }
             @media screen and (max-width:400px) {
-                bottom: 233px;
+                bottom: 250px;
             }
             img {
                 width: 100%;
