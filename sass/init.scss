@@ -107,7 +107,13 @@ section {
     // background: #b9e7f2;
     // background: linear-gradient(to bottom, #003a70, #b9e7f2);
     position: relative;
-
+    // &::before {
+    //     content: "";
+    //     position: fixed;
+    //     background: url("../img/motif-kayu.png");
+    //     background-attachment: fixed;
+    //     background-size: cover;
+    // }
     h3 {
         color: $colorred;
     }
@@ -232,6 +238,9 @@ body {
     height: 100%;
     // font-family: 'Outfit';
     // overflow-x: hidden;
+    p {
+        color: #3a6a4d;
+    }
     font-family: "Rubik" !important;
     @media screen and (max-width: 768px) {
         // overflow-x: hidden;

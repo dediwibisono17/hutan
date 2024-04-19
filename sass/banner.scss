@@ -5,20 +5,20 @@
         left: 50%;
         top: 20%;
         width: 70%;
-        transform: translate(-50%,-50%);
-        @media screen and (max-width:768px) {
+        transform: translate(-50%, -50%);
+        @media screen and (max-width: 768px) {
             width: 100%;
         }
         h2 {
             font-size: 4rem;
             color: #29655d;
-            font-family: 'Paytone One' !important;
+            font-family: "Paytone One" !important;
             text-align: center;
             font-weight: bold;
-            @media screen and (max-width:768px) {
+            @media screen and (max-width: 768px) {
                 font-size: 2.8rem;
             }
-            @media screen and (max-width:400px) {
+            @media screen and (max-width: 400px) {
                 font-size: 2.2rem;
             }
         }
@@ -39,15 +39,15 @@
             text-align: center;
             position: absolute;
             left: 50%;
-            transform: translate(-50%,0);
+            transform: translate(-50%, 0);
             z-index: 12;
             bottom: 0;
-            width: 460px;
-            @media screen and (max-width:768px) {
+            width: 360px;
+            @media screen and (max-width: 768px) {
                 bottom: 100px;
                 width: 80%;
             }
-            @media screen and (max-width:400px) {
+            @media screen and (max-width: 400px) {
                 bottom: 32px;
             }
             // border: 2px solid;
@@ -65,13 +65,13 @@
             z-index: 1;
             left: 50%;
             transform: translate(-50%, 0);
-            width: 460px;
+            width: 360px;
 
-            @media screen and (max-width:768px) {
+            @media screen and (max-width: 768px) {
                 bottom: 336px;
                 width: 80%;
             }
-            @media screen and (max-width:400px) {
+            @media screen and (max-width: 400px) {
                 bottom: 250px;
             }
             img {
@@ -83,13 +83,13 @@
     }
 }
 
-.txt{
+.txt {
     width: fit-content;
     padding: 8px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     &-bg {
         &-hijau {
-            background: #739200;
+            background: #3a6a4d;
             color: white;
         }
     }
