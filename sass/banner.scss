@@ -1,5 +1,6 @@
 .banner {
-    background: #c7e8ea;
+    // background: ;
+    background: linear-gradient(to bottom, #c7e8ea 40%, #ffffe2);
     .title {
         position: absolute;
         left: 50%;
@@ -85,7 +86,7 @@
 
 .txt {
     width: fit-content;
-    padding: 8px;
+    padding: 4px 16px;
     font-size: 2rem;
     &-bg {
         &-hijau {
