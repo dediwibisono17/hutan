@@ -40,4 +40,40 @@
     h3 {
         font-weight: bold;
     }
+
+    ol {
+        margin: 32px 0 16px;
+        padding: 0;
+    }
+
+    li {
+        display: inline-block;
+        width: 48%;
+        text-align: left;
+        vertical-align: top;
+        counter-increment: item;
+        h4 {
+            font-size: 2rem;
+        }
+        .datax {
+            padding-left: 52px;
+        }
+        @media screen and (max-width:768px) {
+            width: 100%;
+        }
+        &::before {
+            background: #293f40;
+            content: counter(item);
+            border-radius: 50%;
+            color: #fff;
+            padding: 4px 0;
+            width: 42px;
+            height: 42px;
+            font-weight: bold;
+            text-align: center;
+            margin-right: 8px;
+            font-size: 24px;
+            float: left;
+        }
+    }
 }
