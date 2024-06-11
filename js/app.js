@@ -69,3 +69,29 @@ Highcharts.chart('container', {
         data: [1276, 1007, 4561, 746]
     }]
 });
+
+
+$.ajax({
+    url: 'js/2019v2.json',
+    method: 'GET',
+    success: function(response) {
+        console.log(response);
+        var investasi =  $("#tanahkita .form-value");
+        investasi.html(response.investasi);
+        var a;
+        for (a=0; a<response.features.length; a++) {
+            // console.log(response.features[a].properties.judul);
+            $("#tanahkita table").append(`
+              <tr>
+                
+                <td>${response.features[a].properties.judul}</td>
+                <td>${response.features[a].properties.tahun}</td>
+                <td>${response.features[a].properties.nm_propinsi}</td>
+                <td>${response.features[a].properties.luas} ha</td>
+                <td><small>${response.features[a].properties.nama_sektor}</small></td>
+                <td>${response.features[a].properties.status_konflik_proses}</td>
+                </tr>  
+            `)
+        }
+    }
+})
