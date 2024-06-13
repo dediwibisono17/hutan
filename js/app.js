@@ -73,7 +73,8 @@ Highcharts.chart('container', {
 });
 
 $(".yearx").click(function () {
-    var nilaix = $(this).attr("data")
+    var nilaix = $(this).attr("data");
+    var tahunnya = $(this).html()
     // alert(nilaix)
     $.ajax({
         url: 'js/' + nilaix + '.json',
@@ -82,6 +83,7 @@ $(".yearx").click(function () {
             console.log(response);
             var investasi = $("#tanahkita .form-value");
             investasi.html(response.investasi);
+            $(".tahunx").html(tahunnya)
             var a;
             $("#cek-data .row").html("")
             for (a = 0; a < response.features.length; a++) {
