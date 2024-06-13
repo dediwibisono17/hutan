@@ -37,13 +37,17 @@
 	// });
 
 	function onEachFeature(feature, layer) {
-        
+        var data_konflik = feature.properties.status_konflik_proses;
+        var konflik = feature.properties.status_konflik_proses == null || "" ? "-" : data_konflik;
+        var luas = feature.properties.luas;
+                var parsInt = parseInt(luas);
+                var luasVal = parsInt.toLocaleString('id')
         if (feature.properties ) {
             // <p>I started out as a GeoJSON ${feature.geometry.type}, but now I'm a Leaflet vector!</p>
             let popupContent = `
                 <h3>${feature.properties.judul}</h3>
-                <div><small>Luas: ${feature.properties.luas} Ha</small></div>
-                <div><small>Status: ${feature.properties.status_konflik_proses} Ha</small></div>
+                <div><small>Luas: ${luasVal} Ha</small></div>
+                <div><small>Status: ${konflik}</small></div>
                 <div><small>Provinsi: ${feature.properties.nm_propinsi} Ha</small></div>
                 <div><small>Kabupaten: ${feature.properties.nm_kabupaten} Ha</small></div>
             `;
