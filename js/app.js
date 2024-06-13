@@ -72,93 +72,100 @@ Highcharts.chart('container', {
     }]
 });
 
+$(".yearx").click(function () {
+    var nilaix = $(this).attr("data")
+    // alert(nilaix)
+    $.ajax({
+        url: 'js/' + nilaix + '.json',
+        method: 'GET',
+        success: function (response) {
+            console.log(response);
+            var investasi = $("#tanahkita .form-value");
+            investasi.html(response.investasi);
+            var a;
+            $("#cek-data .row").html("")
+            for (a = 0; a < response.features.length; a++) {
+                // console.log(response.features[a].properties.judul);
 
-$.ajax({
-    url: 'js/2019v1.json',
-    method: 'GET',
-    success: function (response) {
-        console.log(response);
-        var investasi = $("#tanahkita .form-value");
-        investasi.html(response.investasi);
-        var a;
-        for (a = 0; a < response.features.length; a++) {
-            // console.log(response.features[a].properties.judul);
+                // bd = belum ditangani
+                //ps = proses hukum
 
-            // bd = belum ditangani
-            //ps = proses hukum
-
-            var luas = response.features[a].properties.luas;
-            var parsInt = parseInt(luas);
-            var luasVal = parsInt.toLocaleString('id')
-            // console.log(luasVal);
-            var judul = response.features[a].properties.judul;
-            var kabupaten = response.features[a].properties.nm_kabupaten;
-            var propinsi = response.features[a].properties.nm_propinsi
-            var data_konflik = response.features[a].properties.status_konflik_proses;
-            var konflik = response.features[a].properties.status_konflik_proses == null || "" ? "-" : data_konflik;
-
-            $("#cek-data .row").append(`
-            <div class="col-md-6">
-            <div class="cardx">
-                <div class="left-side">
-                    <h3 class="judulx">${judul}</h3>
-                </div>
-                <div class="right-side">
-                    <div class="clearfix">
-                        <div class="float-left">
-                            <div class="d-block" data-toggle="tooltip" data-placement="top" title="Luas">
-                                <div class="iconx">
-                                    <img src="img/wide.png" alt="">
+                var luas = response.features[a].properties.luas;
+                var parsInt = parseInt(luas);
+                var luasVal = parsInt.toLocaleString('id')
+                // console.log(luasVal);
+                var judul = response.features[a].properties.judul;
+                var kabupaten = response.features[a].properties.nm_kabupaten;
+                var propinsi = response.features[a].properties.nm_propinsi
+                var data_konflik = response.features[a].properties.status_konflik_proses;
+                var konflik = response.features[a].properties.status_konflik_proses == null || "" ? "-" : data_konflik;
+                $("#cek-data .row").append(`
+                <div class="col-md-6">
+                <div class="cardx">
+                    <div class="left-side">
+                        <h3 class="judulx">${judul}</h3>
+                    </div>
+                    <div class="right-side">
+                        <div class="clearfix">
+                            <div class="float-left">
+                                <div class="d-block" data-toggle="tooltip" data-placement="top" title="Luas">
+                                    <div class="iconx">
+                                        <img src="img/wide.png" alt="">
+                                    </div>
+                                    <div class="value">
+                                        <span class="luas">${luasVal}</span>
+                                        ha
+                                    </div>
                                 </div>
-                                <div class="value">
-                                    <span class="luas">${luasVal}</span>
-                                    ha
+                                <div class="d-block">
+                                    <div class="iconx">
+                                        <img src="img/notes.png" alt="">
+                                    </div>
+                                    <div class="value">
+                                        <span class="status">${konflik}</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="d-block">
-                                <div class="iconx">
-                                    <img src="img/notes.png" alt="">
+                            <div class="float-right">
+                                <div class="d-block">
+                                    <div class="iconx">
+                                        <img src="img/map.png" alt="">
+                                    </div>
+                                    <div class="value">
+                                        <div class="provinsi ">${propinsi}</div>
+                                    </div>
                                 </div>
-                                <div class="value">
-                                    <span class="status">${konflik}</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="float-right">
-                            <div class="d-block">
-                                <div class="iconx">
-                                    <img src="img/map.png" alt="">
-                                </div>
-                                <div class="value">
-                                    <div class="provinsi ">${propinsi}</div>
-                                </div>
-                            </div>
-                            <div class="d-block">
-                                <div class="iconx">
-                                    <img src="img/pin.png" alt="">
-                                </div>
-                                <div class="value">
-                                    <div class="kabupaten ">${kabupaten}</div>
+                                <div class="d-block">
+                                    <div class="iconx">
+                                        <img src="img/pin.png" alt="">
+                                    </div>
+                                    <div class="value">
+                                        <div class="kabupaten ">${kabupaten}</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-            `)
-            // $("#tanahkita table").append(`
-            //   <tr>
+                `)
 
-            //     <td>${response.features[a].properties.judul}</td>
-            //     <td>${luasVal} ha</td>
-            //     <td>${response.features[a].properties.nm_kabupaten}</td>
+                // $("#tanahkita table").append(`
+                //   <tr>
 
-            //     <td>${response.features[a].properties.nm_propinsi}</td>
+                //     <td>${response.features[a].properties.judul}</td>
+                //     <td>${luasVal} ha</td>
+                //     <td>${response.features[a].properties.nm_kabupaten}</td>
 
-            //     <td>${konflik}</td>
-            //     </tr>  
-            // `)
+                //     <td>${response.features[a].properties.nm_propinsi}</td>
+
+                //     <td>${konflik}</td>
+                //     </tr>  
+                // `)
+            }
+
+
         }
-    }
+    })
 })
+
