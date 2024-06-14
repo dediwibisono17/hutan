@@ -19,7 +19,7 @@
     </head>
     <body>
         <div id="map"></div>
-        <script src="test.js" type="text/javascript"></script>
+        <script src="hutanadat.js" type="text/javascript"></script>
         <!-- <script src="js/2015v1.json"></script> -->
         <script>
 	const map = L.map('map').setView([-1.2910469065280155, 112.12226540832819], 4.5);
@@ -48,8 +48,13 @@
                 <h3>${feature.properties.judul}</h3>
                 <div><small>Luas: ${luasVal} Ha</small></div>
                 <div><small>Status: ${konflik}</small></div>
-                <div><small>Provinsi: ${feature.properties.nm_propinsi} Ha</small></div>
-                <div><small>Kabupaten: ${feature.properties.nm_kabupaten} Ha</small></div>
+                <div><small>Provinsi: ${feature.properties.nm_propinsi} </small></div>
+                <div><small>Kabupaten: ${feature.properties.nm_kabupaten} </small></div>
+                <div>
+                    <p>
+                        ${feature.properties.short_narasi}
+                    </p>
+                </div>
             `;
 			// popupContent += feature.properties.judul;
             layer.bindPopup(popupContent);
