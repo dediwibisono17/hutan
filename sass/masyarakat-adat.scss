@@ -2,6 +2,11 @@
     .sticky-mode {
         background: linear-gradient(to bottom, #ffffe2, #deffd9 50%);
     }
+    .wrap-detikx {
+        @media screen and (max-width: 768px) {
+            margin-top: -35vh;
+        }
+    }
     .wallpaper {
         position: absolute;
         inset: 0;
