@@ -5,10 +5,12 @@
         position: absolute;
         left: 50%;
         top: 20%;
+        // z-index: 3;
+        // text-shadow: 2px 2px white;
         width: 70%;
         transform: translate(-50%, -50%);
         @media screen and (max-width: 768px) {
-            width: 100%;
+            width: 90%;
         }
         h2 {
             font-size: 4rem;
@@ -16,12 +18,14 @@
             font-family: "Paytone One" !important;
             text-align: center;
             font-weight: bold;
+            margin-bottom: 0;
             @media screen and (max-width: 768px) {
-                font-size: 2.8rem;
+                font-size: 2.5rem;
+                line-height: 2.5rem;
             }
-            @media screen and (max-width: 400px) {
-                font-size: 2.2rem;
-            }
+            // @media screen and (max-width: 400px) {
+            //     font-size: 2.5rem;
+            // }
         }
     }
 
@@ -30,10 +34,42 @@
         // left: 50%;
         // bottom: 0;
         // // width: 100%;
+        position: relative;
+        width: 100vw;
+        height: 100vh;
         // transform: translate(-50%, 0);
-        // @media screen and (max-width:768px) {
-        //     width: 90%;
-        // }
+        @media screen and (max-width: 768px) {
+            top: -10vh;
+        }
+        .burung {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            z-index: 3;
+            transform: translate(-50%, -50%);
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+            height: auto;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        .awan {
+            width: auto;
+            height: 40px;
+            position: absolute;
+            top: 40%;
+            left: -8%;
+            z-index: 2;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
         .bumi {
             // width: 100%;
             margin: 0 auto;

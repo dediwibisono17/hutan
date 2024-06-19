@@ -290,7 +290,7 @@ h5 {
     border-radius: 16px;
     // background: rgba(silver, 0.6);
     margin-bottom: 16px;
-    background: linear-gradient(to top, #e5e5e5, transparent);
+    background: linear-gradient(to top, #e5e5e5, white);
     position: relative;
 
     .img {
@@ -319,6 +319,10 @@ h5 {
             // font-size: 1rem;
         }
     }
+}
+
+.mb-80 {
+    margin-bottom: 45vh;
 }
 
 section {
