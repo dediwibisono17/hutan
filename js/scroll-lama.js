@@ -5,6 +5,8 @@ var figure = scrolly.select("figure");
 var article = scrolly.select("article");
 var step = article.selectAll(".step");
 
+// var datastep = step.attr("data-step")
+
 // initialize the scrollama
 var scroller = scrollama();
 
@@ -14,8 +16,8 @@ function handleResize() {
     var stepH = Math.floor(window.innerHeight * 0.75);
     step.style("height", stepH + "px");
 
-    var figureHeight = window.innerHeight / 2;
-    var figureMarginTop = (window.innerHeight - figureHeight) / 2;
+    var figureHeight = window.innerHeight / 1;
+    var figureMarginTop = (window.innerHeight - figureHeight) / 1;
 
     figure
         .style("height", figureHeight + "px")
@@ -27,16 +29,18 @@ function handleResize() {
 
 // scrollama event handlers
 function handleStepEnter(response) {
-    console.log(response);
+    // console.log(response);
     // response = { element, direction, index }
+    var datanya = response.index + 1;
 
     // add color to current step only
     step.classed("is-active", function (d, i) {
         return i === response.index;
     });
-
     // update graphic based on step
-    figure.select("p").text(response.index + 1);
+    // console.log(datastep)
+    figure.attr('class', 'dedi-' + datanya + '')
+    figure.select("p").text(datanya);
 }
 
 
@@ -51,7 +55,8 @@ function init() {
     scroller
         .setup({
             step: "#scrolly article .step",
-            offset: 0.33,
+            // offset: 0.33,
+            offset: 0.70,
             debug: false
         })
         .onStepEnter(handleStepEnter);
