@@ -86,8 +86,11 @@
         border-radius: 16px;
         padding: 16px;
         // top: -50vh;
-        background: #ccc;
+        background: rgba(#ccc, 0.9);
         // font-family: "Source Code Pro";
+        p {
+            // color: black;
+        }
         @media screen and (max-width: 768px) {
             width: 100%;
         }
