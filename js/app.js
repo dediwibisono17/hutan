@@ -1,6 +1,6 @@
 $('[data-toggle="tooltip"]').tooltip()
 
-Highcharts.chart('container', {
+/*Highcharts.chart('container', {
     chart: {
         type: 'bar'
     },
@@ -70,7 +70,7 @@ Highcharts.chart('container', {
         name: 'Year 2018',
         data: [1276, 1007, 4561, 746]
     }]
-});
+});*/
 
 $(".yearx").click(function () {
     var nilaix = $(this).attr("data");
