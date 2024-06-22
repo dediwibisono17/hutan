@@ -44,7 +44,7 @@
         @media screen and (max-width: 768px) {
             transform: translate(-50%, -50%);
             width: 100%;
-            height: 90vh;
+            height: 100%;
         }
         // @media screen and (max-width:) {
 
@@ -60,7 +60,7 @@
             right: 0;
             width: 100%;
             height: 0px;
-            background: linear-gradient(to top, #ffffe2, transparent);
+            // background: linear-gradient(to top, #ffffe2, transparent);
         }
         // background: linear-gradient(to bottom, #ffffe2, #deffd9 50%);
         background: linear-gradient(to bottom, #59483d, #d46a2c, #f3d635);
