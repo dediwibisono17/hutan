@@ -6,10 +6,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Wajah Seram Negara Merampas Hutan Adat</title>
         <link rel="stylesheet" href="sass/bootstrap.min.css">
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+            integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+            crossorigin=""
+        >
         <link rel="stylesheet" href="sass/aos.css">
         <link rel="stylesheet" href="sass/slick-theme.css">
         <link rel="stylesheet" href="sass/slick.css">
         <link rel="stylesheet" href="sass/style.css">
+        <link rel="stylesheet" href="sass/new.css">
     </head>
     <body>
         <main>
@@ -19,9 +26,9 @@
                     <h2>Merampas Hutan Adat</h2>
                 </div>
                 <div class="all-data">
-                    <div class="mavia">
+                    <!-- <div class="mavia">
                         <img src="img/mavia.png" alt="">
-                    </div>
+                    </div> -->
                     <div class="burung">
                         <img src="img/burung.png" alt="">
                     </div>
@@ -166,14 +173,6 @@
             </section>
             <section class="data scroller padding-0" id="info">
                 <div class="sticky-mode">
-                    <div class="wrap-detikx">
-                        <div class="titlex" hidden>
-                            <h3>
-                                Masyarakat Berdampingan dengan Hutan Adat
-                            </h3>
-                            <!-- <small>Sumber: BRWA</small> -->
-                        </div>
-                    </div>
                     <div class="wadah height bg-greenx">
                         <div class="card__img-holder">
                             <img src="img/masyarakat-adat-02.png" alt="">
@@ -313,20 +312,10 @@
                 </div>
             </section>
             <section class="peta">
-                <!-- <div class="sticky-mode"> -->
-                <!-- <div class="peta__image">
-                    <img src="img/peta-hutan-03.png" alt="">
-                </div> -->
-                <!-- </div> -->
-                <div class="wrap-detikx">
-                    <div class="mb-80">
-                        <div class="hello">
-                            <div class="content">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni vero veniam odit aut odio ipsum nulla eligendi, et, facere iusto distinctio eum, perferendis officiis consequatur numquam. Minus ea sint aliquid?</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus impedit dolorum natus, magnam nobis explicabo optio aperiam suscipit neque fuga iure cupiditate molestias, in porro culpa cumque assumenda laboriosam! Ab. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque modi sit fugit, adipisci nemo ipsam eveniet quae libero esse debitis rem. Ducimus, et? Dolore rem ea quasi beatae adipisci ex.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div id="map"></div>
+                <div style="text-align: center;">
+                    <h4>Nilai Investasi</h4>
+                    <h3 class="nilai"></h3>
                 </div>
             </section>
             <!-- <div class="line"></div> -->
@@ -391,6 +380,8 @@
         <script src="js/jquery-3.5.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/slick.min.js"></script>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+        <script src="js/perkebunan2023.js"></script>
         <!-- <script src="https://code.highcharts.com/highcharts.js"></script>
         <script src="https://code.highcharts.com/modules/exporting.js"></script>
         <script src="https://code.highcharts.com/modules/export-data.js"></script>
@@ -402,5 +393,6 @@
         <script src="js/ScrollTrigger.min.js"></script>
         <script src="js/scroll-gsap.js"></script>
         <script src="js/app.js"></script>
+        <script src="js/peta.js"></script>
     </body>
 </html>
