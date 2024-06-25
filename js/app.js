@@ -71,6 +71,19 @@ $('[data-toggle="tooltip"]').tooltip()
         data: [1276, 1007, 4561, 746]
     }]
 });*/
+// var s = document.createElement("script");
+// s = ""
+// $(".btn-peta").click(function () {
+//     var datapeta = $(this).attr('data');
+//     // alert(datapeta)
+
+//     var s = document.createElement("script");
+//     s.type = "text/javascript";
+//     s.src = `js/${datapeta}.js`;
+//     // Use any selector
+//     $("body").append(s);
+
+// })
 
 $(".yearx").click(function () {
     var nilaix = $(this).attr("data");
