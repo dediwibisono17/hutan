@@ -18,6 +18,7 @@ function onEachFeature(feature, layer) {
     var data_konflik = feature.properties.status_konflik_proses;
     var konflik = feature.properties.status_konflik_proses == null || "" ? "-" : data_konflik;
     var luas = feature.properties.luas;
+    var sektor = feature.properties.nama_sektor;
     var parsInt = parseInt(luas);
     var luasVal = parsInt.toLocaleString('id')
     if (feature.properties) {
@@ -25,6 +26,7 @@ function onEachFeature(feature, layer) {
         let popupContent = `
                 <h3>${feature.properties.judul}</h3>
                 <div><small>Luas: ${luasVal} Ha</small></div>
+                <div><small>Sektor: ${sektor}</small></div>
                 <div><small>Status: ${konflik}</small></div>
                 <div><small>Provinsi: ${feature.properties.nm_propinsi} </small></div>
                 <div><small>Kabupaten: ${feature.properties.nm_kabupaten} </small></div>
@@ -53,6 +55,26 @@ const bicycleRentalLayer = L.geoJSON([bicycleRental], {
         return L.circleMarker(latlng, {
             radius: 8,
             fillColor: '#ff7800',
+            color: '#000',
+            weight: 1,
+            opacity: 1,
+            fillOpacity: 0.8
+        });
+    }
+}).addTo(map);
+
+const pertambanganLayer = L.geoJSON([pertambanganRental], {
+
+    style(feature) {
+        return feature.properties && feature.properties.style;
+    },
+
+    onEachFeature,
+
+    pointToLayer(feature, latlng) {
+        return L.circleMarker(latlng, {
+            radius: 8,
+            fillColor: '#4a86e8',
             color: '#000',
             weight: 1,
             opacity: 1,
