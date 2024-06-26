@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "super";
+    src: url("Super_Mystery.woff2") format("woff2");
+    // src: local("Super_Mystery");
+}
 .banner {
     // background: ;
     background: linear-gradient(to bottom, #c7e8ea 40%, #ffffe2);
@@ -5,7 +10,7 @@
         position: absolute;
         left: 50%;
         top: 20%;
-        // z-index: 3;
+        z-index: 13;
         // text-shadow: 2px 2px white;
         width: 70%;
         transform: translate(-50%, -50%);
@@ -14,9 +19,10 @@
         }
         h2 {
             font-size: 4rem;
-            color: #29655d;
-            font-family: "Paytone One" !important;
+            color: #96b521;
+            font-family: "super" !important;
             text-align: center;
+            text-shadow: 4px 4px black;
             font-weight: bold;
             margin-bottom: 0;
             @media screen and (max-width: 768px) {
@@ -92,6 +98,12 @@
                 object-fit: contain;
             }
         }
+        .setengah-bumi {
+            transform: translate(-50%, 77%) scale(2.5) !important;
+            @media screen and (max-width: 768px) {
+                transform: translate(-50%, 77%) scale(2) !important;
+            }
+        }
         .bumi {
             // width: 100%;
             margin: 0 auto;
@@ -101,10 +113,10 @@
             transform: translate(-50%, 0);
             z-index: 12;
             bottom: 0;
-            width: 360px;
+            width: 40%;
             @media screen and (max-width: 768px) {
                 bottom: 100px;
-                width: 80%;
+                width: 100%;
             }
             @media screen and (max-width: 400px) {
                 bottom: 32px;
