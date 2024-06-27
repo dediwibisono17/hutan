@@ -30,7 +30,7 @@ setTimeout(() => {
                     // end,
                     end: () => innerHeight / 2 + ' bottom',
                     markers: false,
-                    height: 100,
+                    // height: 50,
                     toggleActions: "restart none reverse reset",
                     pinSpacing,
                 },
