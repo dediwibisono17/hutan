@@ -20,6 +20,8 @@
         max-width: 100%;
         max-height: 100%;
         h3 {
+            font-family: "Rubik";
+            font-size: 1.3rem;
             @media screen and (max-width: 768px) {
                 font-size: 1.2rem;
             }
@@ -44,5 +46,29 @@
             color: white;
             margin-bottom: 0;
         }
+    }
+    .ket {
+        display: inline-block;
+        margin: 0 8px;
+    }
+    .bulat {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        vertical-align: middle;
+        &-oren {
+            background: #ff7800;
+        }
+        &-biru {
+            background: #4a86e8;
+        }
+    }
+    .namx {
+        display: inline-block;
+        font-size: 14px;
+        color: #444;
+        vertical-align: middle;
+        margin-left: 1px;
     }
 }
