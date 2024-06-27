@@ -16,7 +16,7 @@ setTimeout(() => {
                 : `+=${targetsHeight[index + 1].offsetHeight}px`;
         const opacityFirst = index === 0 ? 1 : 0;
         const opacitySecond = index === targetsHeight.length - 1 ? 1 : 0;
-        // console.log(target, 'end');
+        console.log(targetsHeight, 'end');
         const tl = gsap
             .timeline({
                 defaults: { duration: 1 },
@@ -30,13 +30,14 @@ setTimeout(() => {
                     // end,
                     end: () => innerHeight / 2 + ' bottom',
                     markers: false,
-                    height: 50,
-                    // toggleActions: "restart none reverse reset",
+                    height: 100,
+                    toggleActions: "restart none reverse reset",
                     pinSpacing,
                 },
             })
             .from(target, { opacity: opacityFirst, duration: 0.2 }, 0)
             .to(target, { opacity: opacitySecond, duration: 0.2 }, 0.8);
+        console.log(tl);
     });
 
 }, 100);
