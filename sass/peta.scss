@@ -11,6 +11,9 @@
             object-fit: contain;
         }
     }
+    .leaflet-popup p {
+        font-size: 80% !important;
+    }
     .leaflet-container {
         height: 65vh;
         margin: 0 auto;
