@@ -21,12 +21,16 @@
             height: 520px;
         }
     }
-
+    .color-white {
+        color: white;
+    }
     .box-angka {
         background: #718e03;
         width: fit-content;
-        margin: 0 auto;
+        // margin: 0 auto;
+        display: inline-block;
         padding: 8px;
+        border-radius: 8px;
         h3 {
             font-weight: bold;
             color: white;

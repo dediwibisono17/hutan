@@ -16,7 +16,7 @@ setTimeout(() => {
                 : `+=${targetsHeight[index + 1].offsetHeight}px`;
         const opacityFirst = index === 0 ? 1 : 0;
         const opacitySecond = index === targetsHeight.length - 1 ? 1 : 0;
-        console.log(targetsHeight, 'end');
+        // console.log(targetsHeight, 'end');
         const tl = gsap
             .timeline({
                 defaults: { duration: 1 },
@@ -37,7 +37,7 @@ setTimeout(() => {
             })
             .from(target, { opacity: opacityFirst, duration: 0.2 }, 0)
             .to(target, { opacity: opacitySecond, duration: 0.2 }, 0.8);
-        console.log(tl);
+        // console.log(tl);
     });
 
 }, 100);

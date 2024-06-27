@@ -470,3 +470,15 @@ section {
     // #3a6a4d
     background: linear-gradient(to right, #293f40 50%, #718e03 0%);
 }
+
+.bg-fixedx {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

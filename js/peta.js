@@ -13,6 +13,8 @@ const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 // });
 
 $(".nilai").html(bicycleRental.investasi)
+// console.log(pertambanganRental.investasi);
+$("#tambang").html(pertambanganRental.investasi)
 function onEachFeature(feature, layer) {
 
     var data_konflik = feature.properties.status_konflik_proses;
