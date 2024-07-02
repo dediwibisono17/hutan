@@ -115,6 +115,7 @@ $(".yearx").click(function () {
                 var propinsi = response.features[a].properties.nm_propinsi
                 var data_konflik = response.features[a].properties.status_konflik_proses;
                 var konflik = response.features[a].properties.status_konflik_proses == null || "" ? "-" : data_konflik;
+                var sumberx = response.features[a].properties.sumber;
                 //     $("#cek-data .row").append(`
                 //     <div class="col-md-6">
                 //     <div class="cardx">
@@ -178,6 +179,7 @@ $(".yearx").click(function () {
                     <td>${response.features[a].properties.nama_sektor}</td>
 
                     <td>${konflik}</td>
+                    <td>${sumberx}</td>
                     </tr>  
                 `)
             }
