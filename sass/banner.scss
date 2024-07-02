@@ -43,7 +43,7 @@
         position: absolute;
         left: 50%;
         top: 20%;
-        z-index: 13;
+        z-index: 11;
         // text-shadow: 2px 2px white;
         width: 70%;
         transform: translate(-50%, -50%);
@@ -55,7 +55,7 @@
             color: #d55050;
             font-family: "super" !important;
             text-align: center;
-            text-shadow: 4px 4px black;
+            // text-shadow: 4px 4px black;
             // font-weight: bold;
             margin-bottom: 0;
             @media screen and (max-width: 768px) {
