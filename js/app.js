@@ -179,7 +179,7 @@ $(".yearx").click(function () {
                     <td>${response.features[a].properties.nama_sektor}</td>
 
                     <td>${konflik}</td>
-                    <td>${sumberx}</td>
+
                     </tr>  
                 `)
             }
