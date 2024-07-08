@@ -1,7 +1,10 @@
 .company-timeline {
     //   margin: 120px 0;
-    background: black;
-
+    // background: black;
+    background: #292018;
+    h3 {
+        color: white;
+    }
     ul li {
         margin: 0 0 10px 24px;
     }
@@ -215,7 +218,8 @@
         h4 {
             margin-bottom: 10px;
             margin-top: 0;
-            color: #c2d7da;
+            // color: #c2d7da;
+            color: white;
         }
 
         p {
