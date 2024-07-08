@@ -190,3 +190,6 @@ $(".yearx").click(function () {
     })
 })
 
+$("#cek").click(function(){
+    $(".wilayah").fadeToggle()
+})
