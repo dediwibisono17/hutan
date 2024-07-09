@@ -190,6 +190,12 @@ $(".yearx").click(function () {
     })
 })
 
+$("#haha").click(function() {
+    // alert(1)
+    var condition = ($("#ceked").is(":checked") ? $(".wilayah").fadeIn() : $(".wilayah").fadeOut() );
+    $("#mydiv").toggle(condition);
+  });
+
 $("#cek").click(function(){
     $(".wilayah").fadeToggle()
 })

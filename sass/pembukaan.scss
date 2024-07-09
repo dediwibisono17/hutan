@@ -2,27 +2,32 @@
     min-height: auto;
     z-index: 12;
     height: auto;
+    .slider {
+      display: block;
+    }
+
     @media screen and (max-width: 768px) {
         // height: 35vh;
         // height: 60vh;
     }
-
 }
-
 
 .bantu-peta {
     position: relative;
     width: 100%;
     height: 420px;
-    @media screen and (max-width:768px) {
+
+    @media screen and (max-width: 768px) {
         height: 320px;
     }
 }
+
 .petaks {
     position: absolute;
     inset: 0;
     width: 100%;
     height: auto;
+
     img {
         width: 100%;
         height: 100%;
@@ -34,58 +39,123 @@
     margin: 0 auto;
     display: block;
     text-align: center;
+    
+
+    
 }
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 24px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #547844;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
 .wilayah {
     display: none;
 }
 
 /* CSS */
 .button-6 {
-  align-items: center;
-  background-color: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: .25rem;
-  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-  box-sizing: border-box;
-  color: rgba(0, 0, 0, 0.85);
-  cursor: pointer;
-  display: inline-flex;
-  font-family: 'Source Code Pro';
-  font-size: 14px;
-  font-weight: 600;
-  justify-content: center;
-  line-height: 1.25;
-  margin: 0;
-  min-height: 1.2rem;
-  padding: calc(.5rem - 1px) calc(.5rem - 1px);
-  position: relative;
-  text-decoration: none;
-  transition: all 250ms;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: baseline;
-  width: auto;
-  @media screen and (max-width:768px) {
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: 'Source Code Pro';
     font-size: 12px;
-  }
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.22;
+    margin: 0;
+    min-height: 1.2rem;
+    padding: calc(.5rem - 1px) calc(.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+
+    @media screen and (max-width: 768px) {
+        font-size: 12px;
+    }
 }
 
 .button-6:hover,
 .button-6:focus {
-  border-color: rgba(0, 0, 0, 0.15);
-  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-  color: rgba(0, 0, 0, 0.65);
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
 }
 
 .button-6:hover {
-  transform: translateY(-1px);
+    transform: translateY(-1px);
 }
 
 .button-6:active {
-  background-color: #F0F0F1;
-  border-color: rgba(0, 0, 0, 0.15);
-  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
-  color: rgba(0, 0, 0, 0.65);
-  transform: translateY(0);
+    background-color: #F0F0F1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
 }
