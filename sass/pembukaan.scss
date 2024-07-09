@@ -43,7 +43,16 @@
 
     
 }
-
+.wraps {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  .judul {
+    display: inline-block;
+    margin-left: 4px;
+    color: #555;
+  }
+}
 .switch {
   position: relative;
   display: inline-block;
@@ -104,9 +113,9 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.wilayah {
-    display: none;
-}
+// .wilayah {
+//     display: none;
+// }
 
 /* CSS */
 .button-6 {
