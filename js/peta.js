@@ -32,17 +32,17 @@ function onEachFeature(feature, layer) {
                 <div><small>Status: ${konflik}</small></div>
                 <div><small>Provinsi: ${feature.properties.nm_propinsi} </small></div>
                 <div><small>Kabupaten: ${feature.properties.nm_kabupaten} </small></div>
-                <div>
-                    <p>
-                        ${feature.properties.short_narasi}
-                    </p>
-                </div>
-            `;
+                `;
         // popupContent += feature.properties.judul;
         layer.bindPopup(popupContent);
     }
 
 }
+// <div>
+//     <p>
+//         ${feature.properties.short_narasi}
+//     </p>
+// </div>
 
 /* global campus, bicycleRental, freeBus, coorsField */
 const bicycleRentalLayer = L.geoJSON([bicycleRental], {
