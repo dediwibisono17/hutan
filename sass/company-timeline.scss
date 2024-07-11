@@ -261,12 +261,19 @@
         width: 100%;
         position: relative;
         .detailx {
-            // position: absolute;
-            // left: 50%;
-            // top: 50%;
-            // transform: translate(-50%, -50%);
-            // width: 80%;
-            // height: 80%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            background: rgba(#292018, 0.6);
+            transform: translate(-50%, 0%);
+            width: 80%;
+            height: 80%;
+            table {
+                td,
+                th {
+                    font-size: 12px;
+                }
+            }
         }
         .image-peta {
             width: 100%;
