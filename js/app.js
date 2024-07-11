@@ -190,12 +190,23 @@ $(".yearx").click(function () {
     })
 })
 
-$("#haha").click(function() {
+$("#haha").click(function () {
     // alert(1)
-    var condition = ($("#ceked").is(":checked") ? $(".wilayah").fadeIn() : $(".wilayah").fadeOut() );
+    var condition = ($("#ceked").is(":checked") ? $(".wilayah").fadeIn() : $(".wilayah").fadeOut());
     $("#mydiv").toggle(condition);
-  });
+});
 
-$("#cek").click(function(){
+$("#cek").click(function () {
     $(".wilayah").fadeToggle()
 })
+
+$('.slider-peta').slick({
+    // slidesToShow: 3,
+    // slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    // fade: true,
+    speed: 500,
+    cssEase: 'cubic-bezier(0.600, -0.280, 0.735, 0.045)',
+    // cssEase: 'linear'
+});
