@@ -20,6 +20,7 @@ $('.slider-forx').slick({
     slidesToScroll: 1,
     arrows: false,
     fade: true,
+    adaptiveHeight: true,
     asNavFor: '.slider-navx'
 });
 
