@@ -484,9 +484,14 @@ section {
     }
 }
 
+.fa-pause-circle {
+    opacity: 0.5;
+}
 #play-button {
-    position: relative;
+    position: fixed;
     z-index: 19;
+    top: 10%;
+    right: 0%;
     .teks {
         position: absolute;
         right: 24px;

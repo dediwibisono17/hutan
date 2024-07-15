@@ -3,6 +3,64 @@ $(document).ready(function () {
     new WOW().init();
 })
 
+
+
+
+// slider opsi
+
+$('.slider-navx').on('afterChange', function (event, slick, currentSlide) {
+    $('.slider-navx').slick('slickGoTo', currentSlide);
+    var currrentNavSlideElem = '.slider-navx .slick-slide[data-slick-index="' + currentSlide + '"]';
+    $('.slider-navx .slick-slide.is-active').removeClass('is-active');
+    $(currrentNavSlideElem).addClass('is-active');
+});
+
+$('.slider-forx').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-navx'
+});
+
+$('.slider-navx').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider-forx',
+    dots: true,
+    centerMode: true,
+    focusOnSelect: true,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 2,
+                centerMode: true,
+                slidesToScroll: 1
+            }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+    ]
+});
+
 $('[data-toggle="tooltip"]').tooltip()
 
 /*Highcharts.chart('container', {
@@ -246,4 +304,11 @@ function onChange(event) {
 // query selector all returns a list of nodes, therefore we need to iterate over it and attach an event listener to each button seperatly
 btns.forEach((btn) => {
     btn.addEventListener("click", onChange);
+});
+
+
+$(".lihat-lain").click(function () {
+    $('html, body').animate({
+        scrollTop: $(".bgo").offset().top - 72
+    }, 200);
 });

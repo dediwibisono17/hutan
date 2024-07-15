@@ -1,0 +1,75 @@
+.the-sliderx {
+    background: #292018;
+    padding: 0;
+    h4 {
+        font-size: 1.3rem;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    // .h-80 {
+    //     height: 80vh;
+    //     background: #293f40;
+    //     margin-top: 20vh;
+    // }
+
+    .detailx {
+        // position: absolute;
+        // left: 50%;
+        // top: 50%;
+        // background: rgba(#292018, 0.6);
+        // transform: translate(-50%, 0%);
+        // width: 80%;
+        // height: 80%;
+        .table-striped tbody tr:nth-of-type(odd) {
+            background: rgba(0, 0, 0, 0.2);
+        }
+        table {
+            th {
+                color: white;
+            }
+            td,
+            th {
+                color: #d8d8d8;
+                border-top-color: transparent;
+                font-size: 14px;
+                @media screen and (max-width: 768px) {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .img-pulau {
+        width: 100%;
+        height: 360px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .is-active {
+        opacity: 1 !important;
+    }
+    .bgo div {
+        // background: #292018;
+        padding: 8px;
+        color: white;
+    }
+    .nama-prov {
+        opacity: 0.5;
+        background: #393939;
+        border-radius: 16px;
+        // background: #292018;
+        cursor: pointer;
+    }
+
+    .lihat-lain {
+        background: #d8d8d8;
+        width: fit-content;
+        margin: 24px auto 8px;
+        cursor: pointer;
+        padding: 2px 8px;
+        border-radius: 8px;
+    }
+}
