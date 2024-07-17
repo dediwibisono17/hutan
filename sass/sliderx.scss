@@ -1,6 +1,10 @@
 .the-sliderx {
     background: #292018;
     padding: 0;
+    h3 {
+        color: white;
+        margin-bottom: 0;
+    }
     h4 {
         font-size: 1.3rem;
         text-align: center;
@@ -74,5 +78,8 @@
         cursor: pointer;
         padding: 2px 8px;
         border-radius: 8px;
+    }
+    .color-abu {
+        color: #d8d8d8;
     }
 }
