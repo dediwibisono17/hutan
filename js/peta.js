@@ -18,7 +18,7 @@ $("#tambang").html(pertambanganRental.investasi)
 function onEachFeature(feature, layer) {
 
     var data_konflik = feature.properties.status_konflik_proses;
-    var konflik = feature.properties.status_konflik_proses == null || "" ? "-" : data_konflik;
+    var konflik = data_konflik == null || data_konflik == "" ? "Belum ditangani" : data_konflik;
     var luas = feature.properties.luas;
     var sektor = feature.properties.nama_sektor;
     var parsInt = parseInt(luas);
@@ -27,11 +27,11 @@ function onEachFeature(feature, layer) {
         // <p>I started out as a GeoJSON ${feature.geometry.type}, but now I'm a Leaflet vector!</p>
         let popupContent = `
                 <h3>${feature.properties.judul}</h3>
-                <div><small>Luas: ${luasVal} Ha</small></div>
-                <div><small>Sektor: ${sektor}</small></div>
-                <div><small>Status: ${konflik}</small></div>
-                <div><small>Provinsi: ${feature.properties.nm_propinsi} </small></div>
-                <div><small>Kabupaten: ${feature.properties.nm_kabupaten} </small></div>
+                <div class="data-pop">Luas: ${luasVal} Ha</div>
+                <div class="data-pop">Sektor: ${sektor}</div>
+                <div class="data-pop">Status: ${konflik}</div>
+                <div class="data-pop">Provinsi: ${feature.properties.nm_propinsi} </div>
+                <div class="data-pop">Kabupaten: ${feature.properties.nm_kabupaten} </div>
                 `;
         // popupContent += feature.properties.judul;
         layer.bindPopup(popupContent);
