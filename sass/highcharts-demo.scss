@@ -6,7 +6,10 @@
 }
 
 #container {
-    height: 400px;
+    height: 500px;
+    @media screen and (max-width: 768px) {
+        height: 80vh;
+    }
 }
 
 .highcharts-data-table table {

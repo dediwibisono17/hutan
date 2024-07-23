@@ -9,7 +9,8 @@ Highcharts.chart('container', {
     chart: {
         type: 'bar',
         backgroundColor: '#ffffe2',
-        spacing: [10, 10, 50, 10],
+        // spacing: [10, 10, 50, 10],
+        spacingBottom: 30,
         // borderRadius: 16,
         // margin: -16,
         // spacing: [20, 0, 20, 0], // top right bottom left,
@@ -24,11 +25,15 @@ Highcharts.chart('container', {
                         seriesSum += point.y
                     })
                 })
-                chart.renderer.text('Total Luas: ' + seriesSum.toLocaleString("id-ID") + ' hektare', 100, 380)
+                chart.renderer.text('Total Luas: ' + seriesSum.toLocaleString("id-ID") + ' hektare', 100, this.chartHeight - 1)
                     .css({
                         font: 'bold 16px Rubik, sans-serif',
+                        background: "fff"
                         // fontSize: 16,
                         // spacing: [20, 20, 20, 20]
+                    }).attr({
+                        // 'text-anchor': 'end',
+                        zIndex: 3
                     })
                     .add()
                 this.update({
@@ -49,6 +54,9 @@ Highcharts.chart('container', {
                 })
             }
         }
+    },
+    credits: {
+        enabled: false
     },
     title: {
         text: 'Tumpang Tindih Wilayah Adat dengan Izin Usaha',
@@ -110,55 +118,64 @@ Highcharts.chart('container', {
 
     },
     tooltip: {
-        valueSuffix: ' hektare'
+        valueSuffix: ' hektare',
+        style: {
+            font: '16px "Rubik", sans-serif',
+
+        }
     },
     plotOptions: {
         series: {
             stacking: 'normal',
+            // dataLabels: {
+            //     enabled: true
+            // }
             dataLabels: {
-                enabled: true
+                enabled: true,
+                style: {
+                    // color: "#fafafa",
+                    font: '18px "Rubik", sans-serif',
+                    // lineHeight: '2rem'
+                    textOutline: false
+                },
+                bar: {
+                    borderRadius: 0,
+                    pointPadding: 1,
+                    groupPadding: 0.5
+                },
+            },
+        },
+
+    },
+    series: [
+        {
+            name: 'Hak Pengusahaan Hutan',
+            data: [182156, 2445928, 0, 56767, 18594, 1551025],
+            style: {
+                // fontWeight: 'normal',
+                font: 'normal 14px "Source Code Pro", sans-serif',
+            }
+        }, {
+            name: 'Hutan Tanaman Industri',
+            data: [399810, 668008, 1293, 16356, 0, 494157],
+            style: {
+                // fontWeight: 'normal',
+                font: 'normal 14px "Source Code Pro", sans-serif',
+            }
+        }, {
+            name: 'Perkebunan',
+            data: [242990, 974936, 0, 10811, 0, 246478],
+            style: {
+                // fontWeight: 'normal',
+                font: 'normal 14px "Source Code Pro", sans-serif',
             }
         },
-        dataLabels: {
-            enabled: true,
+        {
+            name: 'Tambang',
+            data: [88746, 551379, 29536, 111156, 39049, 29038],
             style: {
-                // color: "#fafafa",
-                font: '1rem "Source Code Pro", sans-serif',
-                // lineHeight: '2rem'
-                textOutline: false
-            },
-            padding: 10,
-            // groupPadding: 0.2
-        },
-    },
-    series: [{
-        name: 'HPH',
-        data: [182156, 2445928, 0, 56767, 18594, 1551025],
-        style: {
-            // fontWeight: 'normal',
-            font: 'normal 14px "Source Code Pro", sans-serif',
-        }
-    }, {
-        name: 'HTI',
-        data: [399810, 668008, 1293, 16356, 0, 494157],
-        style: {
-            // fontWeight: 'normal',
-            font: 'normal 14px "Source Code Pro", sans-serif',
-        }
-    }, {
-        name: 'Perkebunan',
-        data: [242990, 974936, 0, 10811, 0, 246478],
-        style: {
-            // fontWeight: 'normal',
-            font: 'normal 14px "Source Code Pro", sans-serif',
-        }
-    },
-    {
-        name: 'Tambang',
-        data: [88746, 551379, 29536, 111156, 39049, 29038],
-        style: {
-            // fontWeight: 'normal',
-            font: 'normal 14px "Source Code Pro", sans-serif',
-        }
-    }]
+                // fontWeight: 'normal',
+                font: 'normal 14px "Source Code Pro", sans-serif',
+            }
+        }]
 });
