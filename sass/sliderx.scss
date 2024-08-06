@@ -1,6 +1,9 @@
 .the-sliderx {
     background: #292018;
-    padding: 0;
+    // padding: 0;
+    padding: 32px 0;
+   @media screen and (max-width:768px) {
+   }
     h3 {
         color: white;
         margin-bottom: 0;

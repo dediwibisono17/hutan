@@ -1,0 +1,17 @@
+.penutup {
+    min-height: auto;
+    // padding: 0;
+    .allv {
+        margin-bottom: 8px;
+        .jobs {
+            // font-size: 1rem;
+            color: #4a4a4a;
+            font-size: 14px;
+            margin-bottom: 0;
+            font-family: 'Source Code Pro';
+        }
+        .name {
+            font-weight: bold;
+        }
+    }
+}
