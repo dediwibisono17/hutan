@@ -59,7 +59,7 @@ Highcharts.chart('container', {
         enabled: false
     },
     title: {
-        text: 'Tumpang Tindih Wilayah Adat dengan Izin Usaha',
+        text: null,
         style: {
             // color: "#fafafa",
             font: 'bold 20px "Rubik", sans-serif',
@@ -68,7 +68,7 @@ Highcharts.chart('container', {
 
     },
     subtitle: {
-        text: '<small>Sumber: AMAN</small>',
+        text: null,
         align: 'center',
         style: {
             // color: "#fafafa",

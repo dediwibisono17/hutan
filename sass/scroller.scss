@@ -1,7 +1,6 @@
 .scroller {
     padding: 0;
 
-    
     // z-index: 23;
 
     .wrapper-semua {
@@ -254,33 +253,12 @@
         flex-direction: row-reverse;
     }
 
-    @keyframes gerak {
-        0% {
-            // transform: translate(-50%, 0) rotate(-360deg);
-            // opacity: 1;
-            transform: scale(1);
-        }
-
-        50% {
-            // opacity: 0.6;
-            transform: scale(1.1);
-        }
-
-        100% {
-            // transform: translate(-50%, 0) rotate(360deg);
-            // opacity: 1;
-            transform: scale(1);
-        }
-    }
-
     .card__img-holder {
         width: 100vw;
         height: 100vh;
         // background-color: red;
         position: relative;
-        .gerak {
-            animation: gerak 2s linear infinite;
-        }
+
         .helping {
             position: absolute;
             inset: 0;
@@ -292,17 +270,17 @@
                 object-fit: cover;
             }
         }
-        &::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            width: 100%;
-            z-index: 9;
-            height: 100px;
-            background: linear-gradient(to bottom, #ffffe2, transparent);
-        }
+        // &::before {
+        //     content: "";
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     right: 0;
+        //     width: 100%;
+        //     z-index: 9;
+        //     height: 100px;
+        //     background: linear-gradient(to bottom, #ffffe2, transparent);
+        // }
         &::after {
             content: "";
             position: absolute;
@@ -329,24 +307,24 @@
         }
     }
 
-    .card__text {
-        width: 100%;
-        position: relative;
-        z-index: 8;
-        border-radius: 16px;
-        margin-top: -50vh;
-        padding: 16px;
-        margin-bottom: 35vh;
-        // top: -50vh;
-        background: rgba(#ccc, 0.9);
-        // font-family: "Source Code Pro";
-        p {
-            // color: black;
-        }
-        @media screen and (max-width: 768px) {
-            width: 100%;
-        }
-    }
+    // .card__text {
+    //     width: 100%;
+    //     position: relative;
+    //     z-index: 8;
+    //     border-radius: 16px;
+    //     margin-top: -50vh;
+    //     padding: 16px;
+    //     margin-bottom: 350px;
+    //     // top: -50vh;
+    //     background: rgba(#ccc, 0.9);
+    //     // font-family: "Source Code Pro";
+    //     p {
+    //         // color: black;
+    //     }
+    //     @media screen and (max-width: 768px) {
+    //         width: 100%;
+    //     }
+    // }
 
     // .card {
     //     background: #ffffe2 !important;
@@ -354,10 +332,11 @@
 }
 
 .lasts {
-    .card__text {
-        position: absolute;
-        top: -100px;
-        @media screen and (max-width: 768px) {
-        }
+    .hello {
+        margin-bottom: 50vh;
+        // position: relative;
+        // top: -100px;
+        // @media screen and (max-width: 768px) {
+        // }
     }
 }

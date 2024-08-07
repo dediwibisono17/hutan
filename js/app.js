@@ -65,6 +65,7 @@ $('.slider-navx').slick({
 $('[data-toggle="tooltip"]').tooltip()
 
 
+// let table = new DataTable('#myTable');
 
 $(".yearx").click(function () {
     var nilaix = $(this).attr("data");
@@ -92,22 +93,24 @@ $(".yearx").click(function () {
                 var luasVal = parsInt.toLocaleString('id')
                 // console.log(luasVal);
                 var judul = response.features[a].properties.judul;
+                var tahun = response.features[a].properties.tahun;
                 var kabupaten = response.features[a].properties.nm_kabupaten;
                 var propinsi = response.features[a].properties.nm_propinsi
                 var data_konflik = response.features[a].properties.status_konflik_proses;
-                var konflik = response.features[a].properties.status_konflik_proses == null || "" ? "-" : data_konflik;
+                var konflik = response.features[a].properties.status_konflik_proses == null || response.features[a].properties.status_konflik_proses == "" ? "Belum ditangani" : data_konflik;
                 var sumberx = response.features[a].properties.sumber;
 
 
                 $("#tanahkita table tbody").append(`
-                
+
                   <tr>
                   <td>${a + 1}</td>
-                    <td>${response.features[a].properties.judul}</td>
+                    <td>${judul}</td>
+                    <td>${tahun}</td>
                     <td>${luasVal} ha</td>
-                    <td>${response.features[a].properties.nm_kabupaten}</td>
+                    <td>${kabupaten}</td>
 
-                    <td>${response.features[a].properties.nm_propinsi}</td>
+                    <td>${propinsi}</td>
                     <td>${response.features[a].properties.nama_sektor}</td>
 
                     <td>${konflik}</td>
