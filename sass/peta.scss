@@ -78,7 +78,7 @@
     .namx {
         display: inline-block;
         font-size: 14px;
-        color: #444;
+        color: #ddd;
         vertical-align: middle;
         margin-left: 1px;
     }
@@ -90,6 +90,11 @@
     color: black;
 }
 
-.peta-tanah {
-    background: #292018;
+.peta-tanah-kita {
+    background: #292018 !important;
+    .wrap-detikx {
+        h3 {
+            color: white !important;
+        }
+    }
 }
