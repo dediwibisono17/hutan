@@ -1,6 +1,6 @@
 // 003a70
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&family=Ubuntu&family=Rubik&family=Source+Code+Pro&family=Libre+Franklin:wght@400;900&family=Roboto+Slab&family=Titan+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&family=Ubuntu&family=Rubik&family=Source+Code+Pro&family=Special+Elite:wght@400;900&family=Roboto+Slab&family=Troochi&display=swap");
 
 $colorred: #560418;
 
@@ -293,6 +293,30 @@ h5 {
 .bottom-help {
     margin-bottom: 35vh;
 }
+
+.layoutx {
+    // border: 2px solid;
+    // box-shadow: 0 6px 6px -6px #000;
+    // padding: 16px 8px;
+    // margin-bottom: 16px;
+}
+
+// .layoutx:nth-child(4n + 1) {
+//     background-image: radial-gradient(circle, palegreen, yellowgreen);
+// }
+
+// .layoutx:nth-child(4n + 2) {
+//     background-image: radial-gradient(circle, lightblue, deepskyblue);
+// }
+
+// .layoutx:nth-child(4n + 3) {
+//     background-image: radial-gradient(circle, lightcoral, tomato);
+// }
+
+// .layoutx:nth-child(4n + 4) {
+//     background-image: radial-gradient(circle, yellow, orange);
+// }
+
 .hello {
     width: 100%;
     height: auto;
@@ -549,5 +573,11 @@ section {
         &:active {
             color: #2b88b4;
         }
+    }
+}
+
+.titikdua {
+    &::after {
+        content: " :";
     }
 }
