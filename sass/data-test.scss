@@ -43,3 +43,280 @@
         }
     }
 }
+
+.data {
+    .imagex-bg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        @media screen and (max-width: 768px) {
+            height: 75%;
+            inset: initial;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.bg-greenx {
+    // background: transparent !important;
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 0px;
+        background: linear-gradient(to top, #ffffe2, transparent);
+    }
+    // background: linear-gradient(to bottom, #ffffe2, #deffd9 50%);
+    background: linear-gradient(to bottom, #ffffe2, #86975c 75%);
+    @media screen and (max-width: 768px) {
+        background: linear-gradient(to bottom, #ffffe2, #86975c 75%, #ffffe2);
+    }
+}
+
+@keyframes gerakx {
+    0% {
+        // transform: translate(-50%, 0) rotate(-360deg);
+        // opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        // opacity: 0.6;
+        transform: scale(1.1);
+    }
+
+    100% {
+        // transform: translate(-50%, 0) rotate(360deg);
+        // opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes gerakx-mob {
+    0% {
+        // transform: translate(-50%, -50%) rotate(-360deg) !important;
+        // opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        // transform: translate(-50%, -50%) rotate(360deg) !important;
+        // opacity: 0.6;
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+
+    100% {
+        // transform: translate(-50%, -50%) rotate(360deg) !important;
+        // opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.gerak {
+    animation: gerakx 2s linear infinite;
+    @media screen and (max-width: 768px) {
+        animation: gerakx-mob 2s linear infinite;
+    }
+}
+
+.buttons button.active {
+    background-color: #0051b4;
+    color: white;
+}
+
+.quotate {
+    border: 1px solid;
+    padding: 0;
+    position: relative;
+    background: #f7f7f1;
+    .imagexc {
+        width: 200px;
+        position: absolute;
+        height: 300px;
+        bottom: 0;
+        left: 0;
+        // float: left;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .quotesx {
+        font-family: "Special Elite";
+        padding-left: 30%;
+        position: relative;
+        height: 50vh;
+        p {
+            font-size: 1.5rem;
+            position: absolute;
+            font-weight: bold;
+            padding: 16px;
+            @media screen and (max-width: 768px) {
+                left: 0;
+                padding: 8px;
+                top: 0;
+                font-size: 1.2rem;
+                right: 0;
+            }
+        }
+        @media screen and (max-width: 376px) {
+            padding-left: 0;
+            height: 62vh !important;
+            padding: 8px;
+        }
+        @media screen and (max-width: 768px) {
+            padding-left: 0;
+            height: 55vh;
+            padding: 8px;
+        }
+    }
+}
+
+.lala {
+    position: relative;
+    width: 100%;
+    // background-color: red;
+    height: 80vh;
+    margin: 0 auto;
+    .box {
+        background-color: transparent;
+        border-radius: 3px;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 400px;
+        transform-style: preserve-3d;
+        perspective: 2000px;
+        transition: 0.4s;
+        text-align: center;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border-top: 20px solid #a6bf40;
+            border-left: 20px solid #a6bf40;
+            box-sizing: border-box;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-bottom: 20px solid #a6bf40;
+            border-right: 20px solid #a6bf40;
+            box-sizing: border-box;
+        }
+        .fas {
+            font-size: 25px;
+            height: 50px;
+            width: 50px;
+            line-height: 50px !important;
+            background-color: #fff;
+            color: #2c3a47;
+        }
+        .fa {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+        }
+        .text {
+            position: absolute;
+            top: 30px;
+            left: -30px;
+            width: calc(100% + 60px);
+            height: calc(100% - 60px);
+            // background: #557c43;
+            background: linear-gradient(to right, #7bb360, #557c43);
+            border-radius: 3px;
+            transition: 0.4s;
+
+            .fa1 {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .imagexy {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 200px;
+                height: auto;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .sikat {
+                position: absolute;
+                top: 50%;
+                left: 23%;
+                transform: translateY(-50%);
+                text-align: right;
+                width: 75%;
+                padding: 30px 60px;
+                line-height: 1.5;
+                box-sizing: border-box;
+                @media screen and (max-width: 768px) {
+                    width: 80%;
+                    left: 20%;
+                }
+                h3 {
+                    font-size: 30px;
+                    margin-bottom: 5px;
+                }
+                p {
+                    font-size: 2rem;
+                    // font-style: italic;
+                    color: white;
+                    font-family: "Troochi";
+                    @media screen and (max-width: 768px) {
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+        &:hover {
+            .text {
+                transform: rotateY(20deg) skewY(-3deg);
+            }
+            transform: translate(-50%, -50%) rotateY(-20deg) skewY(3deg);
+        }
+    }
+}
+
+.hutan-air {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 320px;
+    height: auto;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}

@@ -1,0 +1,50 @@
+<section class="two-tone" hidden>
+    <div class="wrap-detikx">
+        <div class="txt-bg-hijau txt">
+            Ecology Resources
+        </div>
+        <br>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur facere tenetur minima voluptate earum voluptas itaque voluptatum ipsam nihil distinctio? Corrupti repellendus quae ea quibusdam! Quia animi nemo ab reiciendis?</p>
+        </div>
+        <div class="d-block mx-auto width-all text-center">
+            <div class="daun help-inline">
+                <h3>70%</h3>
+            </div>
+            <div class="daun help-inline">
+                <h3>50%</h3>
+            </div>
+        </div>
+        <br>
+        <div class="group-list">
+            <div class="text-center">
+                <h3>Mengapa Hutan Sangat Penting?</h3>
+            </div>
+            <ol>
+                <li>
+                    <div class="datax">
+                        <h4>Skins of Carbone</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quos, delectus ex excepturi animi quas rem placeat libero repellendus fugit atque tempore aliquid velit, odit ea expedita perferendis porro enim.</p>
+                        <div class="imgs">
+                            <img src="img/icon-hutan.png" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="datax">
+                        <h4>Habitats</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores consequatur, unde tempore architecto accusantium consequuntur! Magnam, aperiam corrupti odit ea voluptate, provident labore sunt voluptatum ducimus reprehenderit itaque iure voluptatem?</p>
+                        <div class="blocking-data">
+                            <div class="iconx">
+                                <img src="img/family.png" alt="">
+                            </div>
+                            <div class="textx text-center">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </div>
+</section>

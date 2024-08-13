@@ -1,11 +1,12 @@
 .the-sliderx {
-    background: #292018;
+    // background: #292018;
     // padding: 0;
     padding: 32px 0;
-   @media screen and (max-width:768px) {
-   }
+    @media screen and (max-width: 768px) {
+    }
     h3 {
-        color: white;
+        // color: white;
+        font-weight: bold;
         margin-bottom: 0;
     }
     h4 {
@@ -35,11 +36,11 @@
         }
         table {
             th {
-                color: white;
+                // color: white;
             }
             td,
             th {
-                color: #d8d8d8;
+                // color: #d8d8d8;
                 border-top-color: transparent;
                 font-size: 14px;
                 @media screen and (max-width: 768px) {
@@ -86,6 +87,9 @@
         border-radius: 8px;
     }
     .color-abu {
-        color: #d8d8d8;
+        // color: #d8d8d8;
+    }
+    .judulx {
+        display: inline-block;
     }
 }

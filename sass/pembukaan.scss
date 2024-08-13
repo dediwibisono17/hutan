@@ -2,6 +2,17 @@
   min-height: auto;
   z-index: 12;
   height: auto;
+
+  .nav {
+    li {
+      background: #547844;
+      padding: 8px 16px;
+      margin-right: 8px;
+      a {
+        color: white;
+      }
+    }
+  }
   .slider {
     display: block;
   }
@@ -114,7 +125,7 @@
   display: none;
 }
 .sumber {
-  font-family: 'Source Code Pro';
+  font-family: "Source Code Pro";
 }
 /* CSS */
 .button-6 {

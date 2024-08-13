@@ -12,6 +12,8 @@ const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 // 	popupAnchor: [0, -28]
 // });
 
+
+
 $(".nilai").html(bicycleRental.investasi)
 // console.log(pertambanganRental.investasi);
 $("#tambang").html(pertambanganRental.investasi)
@@ -95,3 +97,6 @@ const pertambanganLayer = L.geoJSON([pertambanganRental], {
 
 // 	onEachFeature
 // }).addTo(map);
+
+
+
