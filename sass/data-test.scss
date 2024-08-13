@@ -236,11 +236,19 @@
             background-color: #fff;
             color: #2c3a47;
         }
+        .fa-dalem {
+            bottom: initial !important;
+            right: initial !important;
+            top: -16px;
+            left: 16px;
+        }
         .fa {
             position: absolute;
             bottom: 0;
             right: 0;
             z-index: 1;
+            font-size: 3rem;
+            text-shadow: 2px 2px #557c43;
         }
         .text {
             position: absolute;
