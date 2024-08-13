@@ -2,7 +2,7 @@ Highcharts.setOptions({
     lang: {
         thousandsSep: '.'
     },
-  
+
 })
 
 Highcharts.chart('container-tanahkita', {
@@ -13,36 +13,57 @@ Highcharts.chart('container-tanahkita', {
     },
     title: {
         text: 'Data Konflik Agraria Mengorbankan Masyarakat Adat',
-        align: 'left'
+        align: 'left',
+        style: {
+            // color: "#fafafa",
+            font: 'bold 20px "Rubik", sans-serif',
+
+        }
     },
     credits: {
-        text: 'Source: ' +
-            '<a href="https://www.yr.no/nb/historikk/graf/5-97251/Norge/Finnmark/Karasjok/Karasjok?q=2023"' +
-            'target="_blank">YR</a>'
+        text: 'Sumber: Tanahkita.id'
     },
     xAxis: [{
         categories: [
             '2014', '2015', '2016', '2017', '2018', '2019',
             '2020', '2021', '2022', '2023'
         ],
-        crosshair: true
+        crosshair: true,
+        labels: {
+            // text: null,
+            // formatter: function () {
+            //     // var a = this.y.toString().replace('.', ',');
+            //     // return a + '%';
+            // },
+            style: {
+                // color: "#fafafa",
+                font: '13px "Rubik", sans-serif',
+                // lineHeight: '2rem'
+                textOutline: false
+            }
+        },
     }],
     yAxis: [{ // Primary yAxis
         labels: {
-            format: '{value} ha',
+            format: '{value:,.0f} ha',
             style: {
-                color: Highcharts.getOptions().colors[1]
-            }
+                color: Highcharts.getOptions().colors[1],
+                // color: "#fafafa",
+                font: '13px "Rubik", sans-serif',
+                // lineHeight: '2rem'
+                textOutline: false
+            },
+
         },
         title: {
-            text: 'Temperature',
+            text: 'Luas',
             style: {
                 color: Highcharts.getOptions().colors[1]
             }
         }
     }, { // Secondary yAxis
         title: {
-            text: 'Precipitation',
+            text: 'Jumlah Kasus',
             style: {
                 color: Highcharts.getOptions().colors[0]
             }
@@ -56,7 +77,12 @@ Highcharts.chart('container-tanahkita', {
         opposite: true
     }],
     tooltip: {
-        shared: true
+        shared: true,
+        style: {
+            // fontWeight: 'bold',
+            fontFamily: 'Rubik',
+            fontSize: '13px'
+        }
     },
     legend: {
         align: 'left',
@@ -66,7 +92,7 @@ Highcharts.chart('container-tanahkita', {
             'rgba(255,255,255,0.25)'
     },
     series: [{
-        name: 'Precipitation',
+        name: 'Jumlah Kasus',
         type: 'column',
         yAxis: 1,
         data: [
@@ -78,7 +104,7 @@ Highcharts.chart('container-tanahkita', {
         }
 
     }, {
-        name: 'Temperature',
+        name: 'Luas',
         type: 'spline',
         data: [
             2786626, 2824774, 2831774, 2987276, 2990621, 3004263, 3008112, 3015207, 3039628,
