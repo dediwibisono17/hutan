@@ -56,14 +56,14 @@ Highcharts.chart('container-tanahkita', {
 
         },
         title: {
-            text: 'Luas',
+            text: null,
             style: {
                 color: Highcharts.getOptions().colors[1]
             }
         }
     }, { // Secondary yAxis
         title: {
-            text: 'Jumlah Kasus',
+            text: null,
             style: {
                 color: Highcharts.getOptions().colors[0]
             }
