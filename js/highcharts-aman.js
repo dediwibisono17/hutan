@@ -48,7 +48,12 @@ Highcharts.chart('container-aman', {
         }
     },
     title: {
-        text: 'Hak Pengusahaan Hutan'
+        text: 'Hak Pengusahaan Hutan',
+        style: {
+            // color: "#fafafa",
+            font: 'bold 20px "Rubik", sans-serif',
+
+        }
     },
     subtitle: {
         text: null
@@ -74,7 +79,7 @@ Highcharts.chart('container-aman', {
                 style: {
                     // color: "white",//color nama
                     // borderColor: '#fafafa',
-                    font: 'normal 1rem "Rubik", sans-serif',
+                    font: 'normal .9rem "Rubik", sans-serif',
                     fontWeight: 'normal',
                     textOutline: false
                     // lineHeight: '2rem'
@@ -189,7 +194,12 @@ Highcharts.chart('container-aman-hti', {
         }
     },
     title: {
-        text: 'Hutan Tanaman Industri'
+        text: 'Hutan Tanaman Industri',
+        style: {
+            // color: "#fafafa",
+            font: 'bold 20px "Rubik", sans-serif',
+
+        }
     },
     subtitle: {
         text: null
@@ -331,7 +341,12 @@ Highcharts.chart('container-aman-pertambangan', {
         }
     },
     title: {
-        text: 'Pertambangan'
+        text: 'Pertambangan',
+        style: {
+            // color: "#fafafa",
+            font: 'bold 20px "Rubik", sans-serif',
+
+        }
     },
     subtitle: {
         text: null
@@ -471,7 +486,12 @@ Highcharts.chart('container-aman-perkebunan', {
         }
     },
     title: {
-        text: 'Perkebunan'
+        text: 'Perkebunan',
+        style: {
+            // color: "#fafafa",
+            font: 'bold 20px "Rubik", sans-serif',
+
+        }
     },
     subtitle: {
         text: null
