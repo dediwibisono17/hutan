@@ -1,6 +1,7 @@
 
+
 Highcharts.setOptions({
-    colors: ['#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4']
+    colors: ['#24CBE5', '#50B432', '#FF9655', '#FFF263', '#6AF9C4', '#64E572', '#ED561B', '#DDDF00',]
 });
 Highcharts.chart('container-aman', {
     chart: {
@@ -119,7 +120,8 @@ Highcharts.chart('container-aman', {
             data: [
                 {
                     name: 'Sumatera',
-                    y: 182156
+                    y: 182156,
+
                 },
                 {
                     name: 'Kalimantan',
