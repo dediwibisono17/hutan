@@ -1,15 +1,29 @@
 Highcharts.chart('container-aman', {
     chart: {
-        type: 'pie'
+        type: 'pie',
+        backgroundColor: "transparent",
     },
     title: {
-        text: 'Hak Pengusahaan Hutan'
+        text: 'Hak Pengusahaan Hutan',
+        style: {
+            // color: "#fafafa",
+            font: 'bold 20px "Rubik", sans-serif',
+
+        }
     },
     tooltip: {
-        valueSuffix: ' hektare'
+        valueSuffix: ' hektare',
+        style: {
+            //fontWeight: 'bold',
+            fontFamily: 'Rubik',
+            fontSize: '1rem'
+        }
     },
     subtitle: {
         text: null
+    },
+    credits: {
+        enabled: false //buat highcharts com
     },
     plotOptions: {
         series: {
@@ -17,7 +31,15 @@ Highcharts.chart('container-aman', {
             cursor: 'pointer',
             dataLabels: [{
                 enabled: true,
-                distance: 20
+                distance: 20,
+                style: {
+                    // color: "white",//color nama
+                    borderColor: 'transparent',
+                    font: 'normal 1.3rem "Rubik", sans-serif',
+                    fontWeight: 'normal',
+                    textOutline: false
+                    // lineHeight: '2rem'
+                },
             }, {
                 enabled: true,
                 distance: -40,
@@ -26,7 +48,8 @@ Highcharts.chart('container-aman', {
                 style: {
                     fontSize: '1.2em',
                     textOutline: 'none',
-                    opacity: 0.7
+                    opacity: 0.7,
+                    fontFamily: 'Rubik'
                 },
                 filter: {
                     operator: '>',
