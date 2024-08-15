@@ -1,5 +1,8 @@
 section {
   .nav {
+    // margin: 0 auto;
+    // text-align: center;
+    justify-content: center;
     &-tabs {
       border-bottom: 1px solid transparent !important;
     }
@@ -7,6 +10,7 @@ section {
       padding: 8px 16px;
       // margin-right: 8px;
       margin: 8px 8px 8px 0;
+      border-radius: 16px;
       background: #8d6f55;
       &.active {
         background: #547844;
