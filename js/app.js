@@ -187,3 +187,20 @@ $(".lihat-lain").click(function () {
         scrollTop: $(".bgo").offset().top - 72
     }, 200);
 });
+
+
+
+$('#aman li').click(function () {
+    $('#aman li ').removeClass("active");
+    $(this).addClass("active");
+});
+
+$('#brwa li').click(function () {
+    $('#brwa li ').removeClass("active");
+    $(this).addClass("active");
+});
+
+$('#tanahkita li').click(function () {
+    $('#tanahkita li ').removeClass("active");
+    $(this).addClass("active");
+});

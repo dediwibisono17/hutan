@@ -294,11 +294,11 @@ h5 {
     margin-bottom: 35vh;
 }
 
-.layoutx {
-    // border: 2px solid;
-    // box-shadow: 0 6px 6px -6px #000;
-    // padding: 16px 8px;
-    // margin-bottom: 16px;
+.layoutxx {
+    border: 2px solid;
+    box-shadow: 0 6px 6px -6px #000;
+    padding: 16px 8px;
+    margin-bottom: 16px;
 }
 
 // .layoutx:nth-child(4n + 1) {
@@ -333,8 +333,6 @@ h5 {
         text-align: right;
     }
 
-   
-
     .img {
         // position: absolute;
         bottom: 0;
@@ -364,7 +362,7 @@ h5 {
             overflow: hidden;
             height: auto;
             left: 0;
-            @media screen and (max-width:768px) {
+            @media screen and (max-width: 768px) {
                 left: -16%;
             }
             img {
@@ -373,7 +371,7 @@ h5 {
                 object-fit: cover;
             }
         }
-       
+
         p {
             margin-bottom: 0;
             // font-size: 1rem;
@@ -600,7 +598,6 @@ section {
         }
     }
 }
-
 
 .color-white {
     color: white;

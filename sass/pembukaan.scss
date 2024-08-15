@@ -4,10 +4,13 @@ section {
       border-bottom: 1px solid transparent !important;
     }
     li {
-      background: #547844;
       padding: 8px 16px;
       // margin-right: 8px;
       margin: 8px 8px 8px 0;
+      background: #8d6f55;
+      &.active {
+        background: #547844;
+      }
       a {
         color: white;
       }
