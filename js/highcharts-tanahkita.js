@@ -7,7 +7,7 @@ Highcharts.setOptions({
 
 Highcharts.chart('container-tanahkita', {
     chart: {
-        backgroundColor: "rgba(255,255,255,.9)",
+        backgroundColor: "transparent",
         zooming: {
             type: 'xy'
         }
@@ -16,7 +16,7 @@ Highcharts.chart('container-tanahkita', {
         text: 'Data Konflik Agraria Mengorbankan Masyarakat Adat',
         align: 'left',
         style: {
-            // color: "#fafafa",
+            color: "#fafafa",
             font: 'bold 20px "Rubik", sans-serif',
 
         }
@@ -37,7 +37,7 @@ Highcharts.chart('container-tanahkita', {
             //     // return a + '%';
             // },
             style: {
-                // color: "#fafafa",
+                color: "#fafafa",
                 font: '13px "Rubik", sans-serif',
                 // lineHeight: '2rem'
                 textOutline: false
@@ -48,8 +48,8 @@ Highcharts.chart('container-tanahkita', {
         labels: {
             format: '{value:,.0f} ha',
             style: {
-                color: Highcharts.getOptions().colors[1],
-                // color: "#fafafa",
+                // color: Highcharts.getOptions().colors[1],
+                color: "#fafafa",
                 font: '13px "Rubik", sans-serif',
                 // lineHeight: '2rem'
                 textOutline: false
@@ -59,20 +59,24 @@ Highcharts.chart('container-tanahkita', {
         title: {
             text: null,
             style: {
-                color: Highcharts.getOptions().colors[1]
+                // color: Highcharts.getOptions().colors[1],
+                color: "#ff0000"
             }
         }
     }, { // Secondary yAxis
         title: {
             text: null,
             style: {
-                color: Highcharts.getOptions().colors[0]
+                color: Highcharts.getOptions().colors[0],
+                textOutline: false
             }
         },
         labels: {
             format: '{value}',
             style: {
-                color: Highcharts.getOptions().colors[0]
+                // color: Highcharts.getOptions().colors[4]
+                color: "#fafafa",
+                textOutline: false
             }
         },
         opposite: true
@@ -88,9 +92,21 @@ Highcharts.chart('container-tanahkita', {
     legend: {
         align: 'left',
         verticalAlign: 'top',
+        itemStyle: {
+            // fontSize: '35px',
+            font: '13px Rubik',
+            color: '#fafafa'
+        },
+        itemHoverStyle: {
+            color: '#FFF'
+        },
+        itemHiddenStyle: {
+            color: '#fafafa'
+        },
         backgroundColor:
             Highcharts.defaultOptions.legend.backgroundColor || // theme
-            'rgba(255,255,255,0.25)'
+            'rgba(255,255,255,0)',
+
     },
     series: [{
         name: 'Jumlah Kasus',
