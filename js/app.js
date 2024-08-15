@@ -3,6 +3,9 @@ $(document).ready(function () {
     new WOW().init();
 })
 
+$('.tanahkita-slide').slick();
+
+
 
 
 

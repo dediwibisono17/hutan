@@ -12,6 +12,22 @@ Highcharts.chart('container-tanahkita', {
             type: 'xy'
         }
     },
+    plotOptions: {
+        column: {
+            borderWidth: 0,
+            borderColor: '#ff0000',
+        },
+        // dataLabels: {
+        //     style: {
+        //         color: "#fafafa",
+        //         font: 'normal 1.5rem "Zain", sans-serif',
+        //         // lineHeight: '2rem'
+        //         fontWeight: 'normal',
+        //         textOutline: false
+        //     },
+        // },
+    },
+
     title: {
         text: 'Data Konflik Agraria Mengorbankan Masyarakat Adat',
         align: 'left',
@@ -112,6 +128,7 @@ Highcharts.chart('container-tanahkita', {
         name: 'Jumlah Kasus',
         type: 'column',
         yAxis: 1,
+        // color: "#747c40",
         data: [
             140, 145, 147, 191, 194, 204, 207, 212, 218,
             219
@@ -123,6 +140,7 @@ Highcharts.chart('container-tanahkita', {
     }, {
         name: 'Luas',
         type: 'spline',
+        // color: "#fafafa",
         data: [
             2786626, 2824774, 2831774, 2987276, 2990621, 3004263, 3008112, 3015207, 3039628,
             3039635
@@ -135,16 +153,31 @@ Highcharts.chart('container-tanahkita', {
 
 Highcharts.chart('container-tanahkita-2', {
     chart: {
-        backgroundColor: "rgba(255,255,255,.9)",
+        backgroundColor: "transparent",
         zooming: {
             type: 'xy'
         }
+    },
+    plotOptions: {
+        column: {
+            borderWidth: 0,
+            borderColor: '#ff0000',
+        },
+        // dataLabels: {
+        //     style: {
+        //         color: "#fafafa",
+        //         font: 'normal 1.5rem "Zain", sans-serif',
+        //         // lineHeight: '2rem'
+        //         fontWeight: 'normal',
+        //         textOutline: false
+        //     },
+        // },
     },
     title: {
         text: 'Status Penanganan Konflik hingga 2023',
         align: 'left',
         style: {
-            // color: "#fafafa",
+            color: "#fafafa",
             font: 'bold 20px "Rubik", sans-serif',
 
         }
@@ -164,7 +197,7 @@ Highcharts.chart('container-tanahkita-2', {
             //     // return a + '%';
             // },
             style: {
-                // color: "#fafafa",
+                color: "#fafafa",
                 font: '13px "Rubik", sans-serif',
                 // lineHeight: '2rem'
                 textOutline: false
@@ -176,7 +209,7 @@ Highcharts.chart('container-tanahkita-2', {
             format: '{value:,.0f} ha',
             style: {
                 color: Highcharts.getOptions().colors[1],
-                // color: "#fafafa",
+                color: "#fafafa",
                 font: '13px "Rubik", sans-serif',
                 // lineHeight: '2rem'
                 textOutline: false
@@ -186,20 +219,23 @@ Highcharts.chart('container-tanahkita-2', {
         title: {
             text: null,
             style: {
-                color: Highcharts.getOptions().colors[1]
+                // color: Highcharts.getOptions().colors[1]
+                color: "#fafafa"
             }
         }
     }, { // Secondary yAxis
         title: {
             text: null,
             style: {
-                color: Highcharts.getOptions().colors[0]
+                // color: Highcharts.getOptions().colors[0]
+                color: "#fafafa"
             }
         },
         labels: {
             format: '{value}',
             style: {
-                color: Highcharts.getOptions().colors[0]
+                // color: Highcharts.getOptions().colors[0]
+                color: "#fafafa"
             }
         },
         opposite: true
@@ -217,7 +253,18 @@ Highcharts.chart('container-tanahkita-2', {
         verticalAlign: 'top',
         backgroundColor:
             Highcharts.defaultOptions.legend.backgroundColor || // theme
-            'rgba(255,255,255,0.25)'
+            'rgba(255,255,255,0)',
+        itemStyle: {
+            // fontSize: '35px',
+            font: '13px Rubik',
+            color: '#fafafa'
+        },
+        itemHoverStyle: {
+            color: '#FFF'
+        },
+        itemHiddenStyle: {
+            color: '#fafafa'
+        },
     },
     series: [{
         name: 'Jumlah Kasus',

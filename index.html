@@ -577,7 +577,7 @@
                         <small class="sumber">Sumber: AMAN</small>
                     </div>
                     <figure class="highcharts-figure">
-                        <div id="container"></div>
+                        <div id="container-aman"></div>
                     </figure>
                     <p>
                         Apabila ditambah dengan hasil analisis pemberitaan media massa, jumlahnya semakin luas lagi. AMAN mencatat sepanjang era Jokowi saja, ada total 11,78 hektar wilayah hutan adat yang dirampas. Sebanyak 925 masyarakat adat menjadi korban kriminalisasi dalam aksi perampasan itu.
@@ -674,15 +674,29 @@
             <section class="peta peta-tanah-kita">
                 <div class="">
                     <div class="wrap-detikx">
-                        <figure class="highcharts-figure">
-                            <div id="container-tanahkita"></div>
-                        </figure>
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a data-toggle="tab" href="#home1">Data Konflik</a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" href="#menu12">Status Penanganan</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="home1" class="tab-pane active">
+                                <figure class="highcharts-figure">
+                                    <div id="container-tanahkita"></div>
+                                </figure>
+                            </div>
+                            <div id="menu12" class="tab-pane">
+                                <figure class="highcharts-figure">
+                                    <div id="container-tanahkita-2"></div>
+                                </figure>
+                            </div>
+                        </div>
                         <br>
-                        <figure class="highcharts-figure">
-                            <div id="container-tanahkita-2"></div>
-                        </figure>
                         <h3 class="text-center">
-                            <strong>Data Sebaran Konflik Perkebunan & Pertambangan 1994-2023</strong>
+                            <strong>Data Sebaran Konflik Perkebunan & Pertambangan hingga 2023</strong>
                         </h3>
                         <div class="d-block mx-auto text-center">
                             <div class="ket">
@@ -966,9 +980,10 @@
         <script src="https://code.highcharts.com/modules/exporting.js"></script>
         <script src="https://code.highcharts.com/modules/export-data.js"></script>
         <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-        <script src="js/data-highcharts.js"></script>
+        <!-- <script src="js/data-highcharts.js"></script> -->
         <script src="js/highcharts-brwa.js"></script>
         <script src="js/highcharts-tanahkita.js"></script>
+        <script src="js/highcharts-aman.js"></script>
         <!-- 
         <script src="js/scrollama.min.js"></script>
         <script src="js/scroll-lama.js"></script> -->

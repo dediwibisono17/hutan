@@ -1,9 +1,8 @@
-.pembukaan {
-  min-height: auto;
-  z-index: 12;
-  height: auto;
-
+section {
   .nav {
+    &-tabs {
+      border-bottom: 1px solid transparent !important;
+    }
     li {
       background: #547844;
       padding: 8px 16px;
@@ -13,6 +12,12 @@
       }
     }
   }
+}
+.pembukaan {
+  min-height: auto;
+  z-index: 12;
+  height: auto;
+
   .slider {
     display: block;
   }
