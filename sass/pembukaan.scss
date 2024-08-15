@@ -187,3 +187,27 @@ section {
   color: rgba(0, 0, 0, 0.65);
   transform: translateY(0);
 }
+
+.legendax {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  .allx {
+    display: inline-block;
+    margin: 0 8px;
+  }
+  .circlex {
+    display: inline-block;
+    width: 20px;
+    vertical-align: middle;
+    background: #96654a;
+    height: 20px;
+    border-radius: 50%;
+    &.cokelatx {
+      background: #eb9e76;
+    }
+  }
+  .ml-1 {
+    font-size: 12px;
+  }
+}
