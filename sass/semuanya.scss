@@ -72,6 +72,17 @@
         background-repeat: no-repeat;
         padding-bottom: 30vh;
     }
+    .x-content {
+        position: relative;
+        z-index: 4;
+        // background-image: url("../img/tanahkita-bumi.png");
+        background-image: url("../img/kebakaran-02.png");
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-bottom: 30vh;
+    }
 
     .wrap-detikx {
         margin-top: -100vh;

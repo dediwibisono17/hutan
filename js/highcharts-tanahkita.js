@@ -33,7 +33,7 @@ Highcharts.chart('container-tanahkita', {
         align: 'left',
         style: {
             color: "#fafafa",
-            font: 'bold 20px "Rubik", sans-serif',
+            font: 'normal 20px "Rubik", sans-serif',
 
         }
     },
@@ -178,7 +178,7 @@ Highcharts.chart('container-tanahkita-2', {
         align: 'left',
         style: {
             color: "#fafafa",
-            font: 'bold 20px "Rubik", sans-serif',
+            font: 'normal 20px "Rubik", sans-serif',
 
         }
     },
