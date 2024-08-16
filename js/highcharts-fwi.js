@@ -73,7 +73,7 @@ Highcharts.chart('container-fwi', {
         },
     },
     tooltip: {
-        valueSuffix: ' million liters'
+        valueSuffix: ' ha'
     },
     // plotOptions: {
     //     series: {
