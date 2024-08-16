@@ -5,8 +5,14 @@ Highcharts.chart('container-fwi', {
         backgroundColor: 'transparent'
     },
     title: {
-        text: null,
-        align: 'left'
+        text: 'Tutupan Hutan dalam Hektare',
+        align: 'left',
+        style: {
+            color: "#fafafa",
+            font: 'normal 20px "Rubik", sans-serif',
+
+        }
+
     },
     xAxis: {
         categories: [
