@@ -14,6 +14,15 @@ Highcharts.chart('container-fwi', {
         }
 
     },
+    subtitle: {
+        text: 'Sumber: FWI',
+        align: 'left',
+        style: {
+            color: "#fafafa",
+            font: 'normal 12px "Source Code Pro", sans-serif',
+
+        }
+    },
     xAxis: {
         categories: [
             // 'Tambang', 'Perkebunan', 'HPH', 'HTI', 'Tumpang Tindih Konsesi', 'Konsesi dan Hutan Adat', 'DLL', 'Tumpang Tindih Hutan Adat'
