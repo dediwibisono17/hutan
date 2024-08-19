@@ -23,6 +23,7 @@ function onEachFeature(feature, layer) {
     var konflik = data_konflik == null || data_konflik == "" ? "Belum ditangani" : data_konflik;
     var luas = feature.properties.luas;
     var sektor = feature.properties.nama_sektor;
+    var tahun = feature.properties.tahun;
     var parsInt = parseInt(luas);
     var luasVal = parsInt.toLocaleString('id')
     if (feature.properties) {
@@ -32,6 +33,7 @@ function onEachFeature(feature, layer) {
                 <div class="data-pop">Luas: ${luasVal} Ha</div>
                 <div class="data-pop">Sektor: ${sektor}</div>
                 <div class="data-pop">Status: ${konflik}</div>
+                <div class="data-pop">Status: ${tahun}</div>
                 <div class="data-pop">Provinsi: ${feature.properties.nm_propinsi} </div>
                 <div class="data-pop">Kabupaten: ${feature.properties.nm_kabupaten} </div>
                 `;

@@ -125,6 +125,7 @@ Highcharts.chart('container-klhk', {
         name: 'Jumlah',
         type: 'column',
         yAxis: 1,
+        color: '#da9859',
         data: [138, 41, 97, 133],
         tooltip: {
             // valueSuffix: ' kasus'
@@ -134,6 +135,7 @@ Highcharts.chart('container-klhk', {
     }, {
         name: 'Luas',
         type: 'spline',
+        color: '#7f4718',
         data: [265250, 592381, 1761167, 2327283],
         tooltip: {
             valueSuffix: ' ha'
