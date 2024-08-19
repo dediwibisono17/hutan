@@ -33,6 +33,9 @@ Highcharts.chart('container-klhk', {
 
         }
     },
+    credits: {
+        enabled: false,
+    },
     subtitle: {
         text: 'Source: KLHK',
         align: 'left',
