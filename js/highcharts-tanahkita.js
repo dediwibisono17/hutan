@@ -38,7 +38,16 @@ Highcharts.chart('container-tanahkita', {
         }
     },
     credits: {
-        text: 'Sumber: Tanahkita.id'
+        enabled: false //buat highcharts com
+    },
+    subtitle: {
+        text: 'Sumber: Tanahkita.id',
+        style: {
+            color: "#fafafa",
+            font: 'normal 12px "Source Code Pro", sans-serif',
+
+        },
+        align: 'left',
     },
     xAxis: [{
         categories: [
@@ -158,6 +167,9 @@ Highcharts.chart('container-tanahkita-2', {
             type: 'xy'
         }
     },
+    credits: {
+        enabled: false //buat highcharts com
+    },
     plotOptions: {
         column: {
             borderWidth: 0,
@@ -182,8 +194,14 @@ Highcharts.chart('container-tanahkita-2', {
 
         }
     },
-    credits: {
-        text: 'Sumber: Tanahkita.id'
+    subtitle: {
+        text: 'Sumber: Tanahkita.id',
+        style: {
+            color: "#fafafa",
+            font: 'normal 12px "Source Code Pro", sans-serif',
+
+        },
+        align: 'left',
     },
     xAxis: [{
         categories: [

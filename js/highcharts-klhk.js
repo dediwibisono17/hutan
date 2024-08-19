@@ -131,14 +131,14 @@ Highcharts.chart('container-klhk', {
         color: '#da9859',
         data: [138, 41, 97, 133],
         tooltip: {
-            // valueSuffix: ' kasus'
-            valueSuffix: null,
+            valueSuffix: ' Penetapan'
+            // valueSuffix: null,
         }
 
     }, {
         name: 'Luas',
         type: 'spline',
-        color: '#7f4718',
+        color: '#f8f9fa',
         data: [265250, 592381, 1761167, 2327283],
         tooltip: {
             valueSuffix: ' ha'

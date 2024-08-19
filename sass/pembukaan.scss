@@ -1,6 +1,37 @@
 section {
+  .bg-baru {
+    background: #533e2b !important;
+    border: 1px solid #533e2b !important;
+    &.nav {
+      &-tabs {
+        border: 1px solid #533e2b !important;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -4px;
+          width: 100%;
+          height: 4px;
+          background: #533e2b;
+        }
+        li {
+          background: #292018 !important;
+          &.active {
+            background: #533e2b !important;
+            &::after {
+              background: #ececec !important;
+            }
+          }
+          a {
+            color: #ececec !important;
+            // color: #533e2b !important;
+          }
+        }
+      }
+    }
+  }
   .tab-content {
     background: #e6ffbc;
+    padding: 8px;
     border: 1px solid green;
     // border-radius: 0 16px 16px 16px;
   }
