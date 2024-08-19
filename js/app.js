@@ -152,7 +152,7 @@ $('.slider-peta').slick({
 
 
 const pauseVar = "fa-pause-circle";
-const playVar = "fa-play-circle";
+const playVar = "fa-volume-up";
 
 const btns = document.querySelectorAll(".all");
 

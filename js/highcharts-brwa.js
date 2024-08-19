@@ -26,7 +26,7 @@ Highcharts.chart('container-brwa', {
         }
     },
     subtitle: {
-        text: 'Sumber: BRWA',
+        text: 'Sumber: BRWA (Badan Registrasi Wilayah Adat)',
         style: {
             // color: "#fafafa",
             font: 'normal 13px "Source Code Pro", sans-serif',
@@ -133,8 +133,9 @@ Highcharts.chart('container-brwa2', {
         }
     },
     subtitle: {
-        text: 'Sumber: BRWA',
+        text: 'Sumber: BRWA (Badan Registrasi Wilayah Adat)',
         style: {
+
             // color: "#fafafa",
             font: 'normal 13px "Source Code Pro", sans-serif',
 

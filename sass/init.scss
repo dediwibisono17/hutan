@@ -572,7 +572,9 @@ section {
         font-weight: bold;
         background: rgba($color: white, $alpha: 0.5);
         @media screen and (max-width: 766px) {
-            display: none;
+            // display: none;
+            right: 46px;
+            top: -24px;
         }
     }
 }
