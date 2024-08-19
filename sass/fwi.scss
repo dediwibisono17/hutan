@@ -114,3 +114,23 @@
         }
     }
 }
+
+.credit-name {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 6;
+    text-align: left;
+    background: linear-gradient(to right, #4f753e 50%, transparent);
+    padding: 8px;
+    @media screen and (max-width: 768px) {
+        padding: 8px 16px;
+    }
+    .names {
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    .gelar {
+        font-size: 0.9rem;
+    }
+}

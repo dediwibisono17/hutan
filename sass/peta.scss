@@ -113,3 +113,32 @@
         }
     }
 }
+
+.credit-quote {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to left, transparent, #ccc);
+    padding: 8px;
+    width: 50%;
+    border-radius: 0 16px 0 0;
+    .nama {
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    .jabatan {
+        font-size: 0.9rem;
+        line-height: 1rem;
+    }
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.imam {
+    p {
+        @media screen and (max-width: 768px) {
+            font-size: 1.2rem !important;
+        }
+    }
+}
