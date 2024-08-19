@@ -281,7 +281,7 @@ Highcharts.chart('container-aman-hti', {
                 },
                 {
                     name: 'Sulawesi',
-                    y: 0
+                    y: 16356
                 },
                 {
                     name: 'Maluku',
@@ -289,7 +289,7 @@ Highcharts.chart('container-aman-hti', {
                 },
                 {
                     name: 'Papua',
-                    y: 1551025
+                    y: 494157
                 }
             ]
         }
