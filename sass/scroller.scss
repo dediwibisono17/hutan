@@ -68,7 +68,7 @@
             // background: linear-gradient(to top, #ffffe2, transparent);
         }
         // background: linear-gradient(to bottom, #ffffe2, #deffd9 50%);
-        background: linear-gradient(to bottom, #59483d, #d46a2c, #f3d635);
+        // background: linear-gradient(to bottom, #59483d, #d46a2c, #f3d635);
         // @media screen and (max-width: 768px) {
         //     background: linear-gradient(to bottom, #ffffe2, #7a0b0b 75%, #ffffe2);
         // }
@@ -132,7 +132,7 @@
             img {
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
+                object-fit: contain;
             }
         }
         // &::before {
@@ -155,7 +155,7 @@
             width: 100%;
             z-index: 9;
             height: 100px;
-            background: linear-gradient(to top, #ffffe2, transparent);
+            // background: linear-gradient(to top, #ffffe2, transparent);
         }
         @media screen and (max-width: 768px) {
             width: 100%;
@@ -165,9 +165,9 @@
         img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
             @media screen and (max-width: 768px) {
-                object-fit: cover;
+                object-fit: contain;
             }
         }
     }
@@ -315,7 +315,7 @@
         display: block;
         color: #fff;
         float: left;
-        background: linear-gradient(45deg, #ff6600 0 48%, #333 48% 52%, #ff5722 0 52%);
+        // background: linear-gradient(45deg, #ff6600 0 48%, #333 48% 52%, #ff5722 0 52%);
         border-radius: 20% 100%;
         position: relative;
         &:before {
@@ -332,11 +332,15 @@
         border-radius: 40%;
     }
     &:nth-child(8n + 3) span {
-        background: linear-gradient(45deg, #ff6600 0 48%, #333 48% 52%, #fff0 55% 100%);
+        // background: linear-gradient(45deg, #ff6600 0 48%, #333 48% 52%, #fff0 55% 100%);
     }
     /*
     &:nth-child(4n+4) span:before {
         content: "\274B";
     }
     */
+}
+
+.lasts {
+    // margin-top: -50vh;
 }
