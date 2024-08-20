@@ -48,8 +48,11 @@
                 }
             }
             td {
+                &:last-child {
+                    font-weight: bold;
+                }
                 &:nth-child(3),
-                &:nth-child(4) {
+                &:last-child {
                     &::after {
                         content: " Penetapan";
                     }
