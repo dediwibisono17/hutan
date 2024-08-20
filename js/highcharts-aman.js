@@ -34,7 +34,7 @@ Highcharts.chart('container-aman', {
             // },
             style: {
                 // color: "#fafafa",
-                font: '13px "Rubik", sans-serif',
+                font: '11px "Rubik", sans-serif',
                 // lineHeight: '2rem'
                 textOutline: false
             }
@@ -57,7 +57,7 @@ Highcharts.chart('container-aman', {
             // },
             style: {
                 // color: "#fafafa",
-                font: '13px "Rubik", sans-serif',
+                font: '11px "Rubik", sans-serif',
                 // lineHeight: '2rem'
                 textOutline: false
             }
@@ -80,7 +80,7 @@ Highcharts.chart('container-aman', {
                 enabled: true,
                 style: {
                     // color: "#fafafa",
-                    font: 'normal 13px "Source Code Pro", sans-serif',
+                    font: 'normal 16px "Source Code Pro", sans-serif',
                     // lineHeight: '2rem'
                     fontWeight: 'normal',
 
@@ -145,7 +145,7 @@ Highcharts.chart('container-aman-hti', {
             // },
             style: {
                 // color: "#fafafa",
-                font: '13px "Rubik", sans-serif',
+                font: '11px "Rubik", sans-serif',
                 // lineHeight: '2rem'
                 textOutline: false
             }
@@ -168,7 +168,7 @@ Highcharts.chart('container-aman-hti', {
             // },
             style: {
                 // color: "#fafafa",
-                font: '13px "Rubik", sans-serif',
+                font: '11px "Rubik", sans-serif',
                 // lineHeight: '2rem'
                 textOutline: false
             }
@@ -191,7 +191,7 @@ Highcharts.chart('container-aman-hti', {
                 enabled: true,
                 style: {
                     // color: "#fafafa",
-                    font: 'normal 13px "Source Code Pro", sans-serif',
+                    font: 'normal 16px "Source Code Pro", sans-serif',
                     // lineHeight: '2rem'
                     fontWeight: 'normal',
 
@@ -255,7 +255,7 @@ Highcharts.chart('container-aman-pertambangan', {
             // },
             style: {
                 // color: "#fafafa",
-                font: '13px "Rubik", sans-serif',
+                font: '11px "Rubik", sans-serif',
                 // lineHeight: '2rem'
                 textOutline: false
             }
@@ -278,7 +278,7 @@ Highcharts.chart('container-aman-pertambangan', {
             // },
             style: {
                 // color: "#fafafa",
-                font: '13px "Rubik", sans-serif',
+                font: '11px "Rubik", sans-serif',
                 // lineHeight: '2rem'
                 textOutline: false
             }
@@ -301,7 +301,7 @@ Highcharts.chart('container-aman-pertambangan', {
                 enabled: true,
                 style: {
                     // color: "#fafafa",
-                    font: 'normal 13px "Source Code Pro", sans-serif',
+                    font: 'normal 16px "Source Code Pro", sans-serif',
                     // lineHeight: '2rem'
                     fontWeight: 'normal',
 
@@ -367,7 +367,7 @@ Highcharts.chart('container-aman-perkebunan', {
             // },
             style: {
                 // color: "#fafafa",
-                font: '13px "Rubik", sans-serif',
+                font: '11px "Rubik", sans-serif',
                 // lineHeight: '2rem'
                 textOutline: false
             }
@@ -390,7 +390,7 @@ Highcharts.chart('container-aman-perkebunan', {
             // },
             style: {
                 // color: "#fafafa",
-                font: '13px "Rubik", sans-serif',
+                font: '11px "Rubik", sans-serif',
                 // lineHeight: '2rem'
                 textOutline: false
             }
@@ -413,7 +413,7 @@ Highcharts.chart('container-aman-perkebunan', {
                 enabled: true,
                 style: {
                     // color: "#fafafa",
-                    font: 'normal 13px "Source Code Pro", sans-serif',
+                    font: 'normal 16px "Source Code Pro", sans-serif',
                     // lineHeight: '2rem'
                     fontWeight: 'normal',
 
