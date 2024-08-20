@@ -45,7 +45,7 @@ Highcharts.chart('container-aman', {
     yAxis: {
         min: 0,
         title: {
-            text: 'Population (millions)',
+            text: null,
             align: 'high'
         },
         labels: {
@@ -115,56 +115,10 @@ Highcharts.chart('container-aman', {
 
 
 
-
-
 Highcharts.chart('container-aman-hti', {
     chart: {
-        type: 'pie',
-        custom: {},
-        backgroundColor: 'rgba(255,255,255,0)',
-        borderRadius: 16,
-        events: {
-            render() {
-                const chart = this,
-                    series = chart.series[0];
-                let customLabel = chart.options.chart.custom.label;
-
-                points = chart.series[0].points,
-                    len = points.length,
-                    total = 0,
-                    i = 0;
-
-                for (; i < len; i++) {
-                    total += points[i].y;
-                }
-                if (!customLabel) {
-                    customLabel = chart.options.chart.custom.label =
-                        chart.renderer.label(
-                            'Total<br/>' +
-                            '<strong>' + total.toLocaleString('id') + '</strong> ha'
-                        )
-                            .css({
-                                // color: '#fff',
-                                font: 'normal 2rem "Rubik", sans-serif',
-                                textAnchor: 'middle'
-                            })
-                            .add();
-                }
-
-                const x = series.center[0] + chart.plotLeft,
-                    y = series.center[1] + chart.plotTop -
-                        (customLabel.attr('height') / 2);
-
-                customLabel.attr({
-                    x,
-                    y
-                });
-                // Set font size based on chart diameter
-                customLabel.css({
-                    fontSize: `${series.center[2] / 12}px`
-                });
-            }
-        }
+        type: 'bar',
+        backgroundColor: 'transparent'
     },
     title: {
         text: 'Hutan Tanaman Industri',
@@ -177,91 +131,129 @@ Highcharts.chart('container-aman-hti', {
     subtitle: {
         text: null
     },
+    xAxis: {
+        categories: ['Sumatera', 'Kalimantan', 'Jawa Bali Nusa', 'Sulawesi', 'Maluku', 'Papua'],
+        title: {
+            text: null
+        },
+        labels: {
+            // text: null,
+            // formatter: function () {
+            //     // var a = this.y.toString().replace('.', ',');
+            //     // return a + '%';
+            // },
+            style: {
+                // color: "#fafafa",
+                font: '13px "Rubik", sans-serif',
+                // lineHeight: '2rem'
+                textOutline: false
+            }
+        },
+        gridLineWidth: 1,
+        lineWidth: 0
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: null,
+            align: 'high'
+        },
+        labels: {
+            overflow: 'justify',
+            // text: null,
+            // formatter: function () {
+            //     // var a = this.y.toString().replace('.', ',');
+            //     // return a + '%';
+            // },
+            style: {
+                // color: "#fafafa",
+                font: '13px "Rubik", sans-serif',
+                // lineHeight: '2rem'
+                textOutline: false
+            }
+        },
+        gridLineWidth: 0
+    },
     tooltip: {
-        pointFormat: '{series.name}: <b>{point.y}</b> ha',
+        valueSuffix: ' hektare',
         style: {
-            //fontWeight: 'bold',
+            // fontWeight: 'bold',
             fontFamily: 'Rubik',
-            fontSize: '1rem'
+            fontSize: '12px'
+        }
+    },
+    plotOptions: {
+        bar: {
+            borderRadius: '50%',
+            borderWidth: 0,
+            dataLabels: {
+                enabled: true,
+                style: {
+                    // color: "#fafafa",
+                    font: 'normal 13px "Source Code Pro", sans-serif',
+                    // lineHeight: '2rem'
+                    fontWeight: 'normal',
+
+                },
+            },
+            groupPadding: 0.1
         }
     },
     legend: {
-        enabled: false
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'bottom',
+        x: -40,
+        y: 80,
+        floating: true,
+        borderWidth: 1,
+        backgroundColor:
+            Highcharts.defaultOptions.legend.backgroundColor || '#FFFFFF',
+        shadow: true
     },
     credits: {
-        enabled: false //buat highcharts com
+        enabled: false
     },
-    plotOptions: {
-        pie: {
-            borderColor: 'transparent',
-            dataLabels: {
-                style: {
-                    // color: "white",//color nama
-                    // borderColor: '#fafafa',
-                    font: 'normal 1rem "Rubik", sans-serif',
-                    fontWeight: 'normal',
-                    textOutline: false
-                    // lineHeight: '2rem'
-                },
-            }
-        },
-        series: {
-            allowPointSelect: true,
-            cursor: 'pointer',
-            borderRadius: 0,
-            dataLabels: [{
-                enabled: true,
-                distance: 20,
-                format: '{point.name}'
-            }, {
-                enabled: true,
-                distance: -10,
-                format: '{point.y:,.0f}',
-                style: {
-                    fontSize: '0.9em',
-                    // color: "#fafafa"
-                }
-            }],
-            showInLegend: false
-        }
-    },
-    series: [
-        {
-            name: 'Luas',
-            colorByPoint: true,
-            innerSize: '65%',
-            // data: [399810, 668008, 1293, 16356, 0, 494157],
-            data: [
-                {
-                    name: 'Sumatera',
-                    y: 399810
-                },
-                {
-                    name: 'Kalimantan',
-                    // sliced: true,
-                    // selected: true,
-                    y: 668008
-                },
-                {
-                    name: 'Jawa Bali Nusa',
-                    y: 1293
-                },
-                {
-                    name: 'Sulawesi',
-                    y: 16356
-                },
-                {
-                    name: 'Maluku',
-                    y: 494157
-                },
-                {
-                    name: 'Papua',
-                    y: 494157
-                }
-            ]
-        }
-    ]
+
+    // data: [
+    //     {
+    //         name: 'Sumatera',
+    //         y: 399810
+    //     },
+    //     {
+    //         name: 'Kalimantan',
+    //         // sliced: true,
+    //         // selected: true,
+    //         y: 668008
+    //     },
+    //     {
+    //         name: 'Jawa Bali Nusa',
+    //         y: 1293
+    //     },
+    //     {
+    //         name: 'Sulawesi',
+    //         y: 16356
+    //     },
+    //     {
+    //         name: 'Maluku',
+    //         y: 494157
+    //     },
+    //     {
+    //         name: 'Papua',
+    //         y: 494157
+    //     }
+    // ]
+    series: [{
+        name: 'Luas',
+        color: '#718e03',
+        data: [399810, 668008, 1293, 16356, 494157, 494157]
+    }]
 });
+
+
+
+
+
 
 
 Highcharts.chart('container-aman-pertambangan', {
