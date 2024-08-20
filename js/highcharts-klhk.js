@@ -138,7 +138,8 @@ Highcharts.chart('container-klhk', {
     }, {
         name: 'Luas',
         type: 'spline',
-        color: '#f8f9fa',
+        // color: '#f8f9fa',
+        color: "#fff263",
         data: [265250, 592381, 1761167, 2327283],
         tooltip: {
             valueSuffix: ' ha'
