@@ -2,9 +2,11 @@ section {
   .bg-baru {
     background: #533e2b !important;
     border: 1px solid #533e2b !important;
+    box-shadow: none !important;
     &.nav {
       &-tabs {
         border: 1px solid #533e2b !important;
+        box-shadow: none !important;
         &::after {
           content: "";
           position: absolute;
@@ -33,7 +35,8 @@ section {
     // background: #e6ffbc;
     background: white;
     padding: 8px;
-    border: 1px solid green;
+    box-shadow: 2px 4px 6px #bbb;
+    // border: 1px solid green;
     // border-radius: 0 16px 16px 16px;
   }
   .nav {
@@ -43,7 +46,8 @@ section {
     &-tabs {
       width: fit-content;
       // position: relative;
-      border: 1px solid green;
+      // border: 1px solid green;
+      box-shadow: 4px 0px 2px #bbb;
       border-bottom: 1px solid transparent;
       // border-bottom: 2px solid #e6ffbc;
       // border-bottom: 1px solid transparent !important;
