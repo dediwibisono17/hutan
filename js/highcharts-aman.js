@@ -77,7 +77,14 @@ Highcharts.chart('container-aman', {
             borderRadius: '50%',
             borderWidth: 0,
             dataLabels: {
-                enabled: true
+                enabled: true,
+                style: {
+                    // color: "#fafafa",
+                    font: 'normal 13px "Source Code Pro", sans-serif',
+                    // lineHeight: '2rem'
+                    fontWeight: 'normal',
+
+                },
             },
             groupPadding: 0.1
         }
