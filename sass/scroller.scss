@@ -342,5 +342,8 @@
 }
 
 .lasts {
-    // margin-top: -50vh;
+    margin-top: -30vh;
+    @media screen and (max-width: 768px) {
+        height: 40vh;
+    }
 }
