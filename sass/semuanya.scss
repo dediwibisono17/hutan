@@ -82,16 +82,6 @@
         background-position: center;
         background-repeat: no-repeat;
         padding-bottom: 30vh;
-        .burungx {
-            position: absolute;
-            width: 90px;
-            height: auto;
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-            }
-        }
     }
 
     .wrap-detikx {
@@ -107,4 +97,19 @@
 
 .helpingx {
     min-height: auto;
+}
+
+.burungx {
+    position: absolute;
+    width: 60px;
+    height: auto;
+    left: 50%;
+    top: 30%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
 }
