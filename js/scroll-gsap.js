@@ -16,7 +16,7 @@ setTimeout(() => {
                 : `+=${targetsHeight[index + 1].offsetHeight}px`;
         const opacityFirst = index === 0 ? 1 : 0;
         const opacitySecond = index === targetsHeight.length - 1 ? 1 : 0;
-        // console.log(targetsHeight, 'end');
+        console.log(target.offsetHeight + 100, 'end');
         const tl = gsap
             .timeline({
                 defaults: { duration: 1 },
@@ -24,13 +24,14 @@ setTimeout(() => {
                     trigger: target,
                     pin: true,
                     scrub: true,
+                    // scroller: '.wrapper-semua',
                     endTrigger: '.lasts',
                     start: "center center",
                     // start: () => innerHeight / 2 + 'center',
                     end,
                     // end: () => innerHeight / 2 + ' bottom',
-                    markers: true,
-                    // height: 50,
+                    markers: false,
+                    height: 50,
                     toggleActions: "restart none reverse reset",
                     pinSpacing,
                 },
