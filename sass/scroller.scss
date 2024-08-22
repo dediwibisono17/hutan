@@ -127,13 +127,22 @@
     .card--reverse {
         flex-direction: row-reverse;
     }
-
+    @keyframes MoveUpDownt {
+        0%,
+        100% {
+            bottom: 0;
+        }
+        50% {
+            bottom: 5px;
+        }
+    }
     .card__img-holder {
+        // animation: MoveUpDownt 1.5s linear infinite;
         width: 100vw;
         height: 100vh;
         // background-color: red;
         position: relative;
-
+        bottom: 0;
         .helping {
             position: absolute;
             inset: 0;
