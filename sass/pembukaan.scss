@@ -76,6 +76,7 @@ section {
         background: white;
         // border-bottom: 2px solid #e6ffbc;
         font-weight: bold;
+        // text-decoration: underline;
         position: relative;
         &::after {
           content: "";
@@ -86,6 +87,7 @@ section {
           left: 50%;
           transform: translate(-50%, -50%);
           z-index: 4;
+          background: green;
           // background: red;
         }
       }
