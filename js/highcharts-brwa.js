@@ -125,7 +125,7 @@ Highcharts.chart('container-brwa2', {
 
 
     title: {
-        text: 'Luas Hutan Adat (Ha)',
+        text: 'Luas Hutan Adat (dalam Hektare)',
         style: {
             // color: "#fafafa",
             font: 'bold 20px "Rubik", sans-serif',

@@ -64,7 +64,7 @@ Highcharts.chart('container-klhk', {
     }],
     yAxis: [{ // Primary yAxis
         labels: {
-            format: '{value:,.0f} ha',
+            // format: '{value:,.0f} ha',
             style: {
                 color: Highcharts.getOptions().colors[1],
                 color: "#fafafa",
