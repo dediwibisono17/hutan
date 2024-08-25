@@ -44,7 +44,7 @@
                 border-top-color: transparent;
                 font-size: 14px;
                 @media screen and (max-width: 768px) {
-                    font-size: 12px;
+                    font-size: 11px;
                 }
             }
             td {
@@ -53,9 +53,10 @@
                 }
                 &:nth-child(3),
                 &:last-child {
-                    &::after {
-                        content: " Penetapan";
-                    }
+                    // text-align: center;
+                    // &::after {
+                    //     content: " Penetapan";
+                    // }
                 }
             }
         }
