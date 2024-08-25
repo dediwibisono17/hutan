@@ -1,4 +1,7 @@
 const map = L.map('map').setView([-1.2910469065280155, 112.12226540832819], 4.5, { dragging: !L.Browser.mobile });
+if (L.Browser.mobile) {
+    map.removeControl(map.zoomControl);
+}
 map.scrollWheelZoom.disable();
 
 const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
