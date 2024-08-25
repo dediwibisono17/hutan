@@ -72,7 +72,7 @@ const animateParagraph = (section) => {
 ScrollTrigger.create({
     trigger: '.contentv',
     start: 'top top',
-    end: '+=' + sections.length * 1000,
+    end: '+=' + sections.length * 500,
     pin: true,
     id: 'pinning'
 });
@@ -82,8 +82,8 @@ sections.forEach((section, index) => {
         scrollTrigger: {
             id: `section_${index + 1}`,
             trigger: ".wrap",
-            start: "top top-=" + (index * 1000),
-            end: "+=" + 1000,
+            start: "top top-=" + (index * 500),
+            end: "+=" + 500,
             scrub: true,
             invalidateOnRefresh: true,
             markers: false
