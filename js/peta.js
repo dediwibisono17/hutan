@@ -1,7 +1,7 @@
 const map = L.map('map').setView([-1.2910469065280155, 112.12226540832819], 4.5, {
-    dragging: !L.Browser.mobile,
+    // dragging: !L.Browser.mobile,
     touchZoom: false,
-    dragging: false
+    // dragging: false
 });
 
 map.scrollWheelZoom.disable();
