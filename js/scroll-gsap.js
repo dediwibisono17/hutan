@@ -41,3 +41,61 @@ setTimeout(() => {
 
 }, 100);
 
+
+
+
+// yang kedua
+
+gsap.registerPlugin(ScrollTrigger);
+
+const sections = Object.values(document.getElementsByClassName("sectionv"));
+
+gsap.set(sections, { zIndex: (i, target, targets) => targets.length - i });
+
+
+const animateParagraph = (section) => {
+
+    const paragraph = section.querySelector('.paragraph')
+
+    const timeline = gsap.timeline();
+
+    timeline
+        .from(paragraph, { opacity: 0, x: -200, lazy: false })
+        .to(paragraph, { opacity: 1, x: 0, scale: 1.5, duration: 2 })
+        .to(paragraph, { duration: 10 })
+        .to(paragraph, { opacity: 0, scale: 1, x: 200, duration: 2 })
+        .to(section, { opacity: 0, duration: 0.5 });
+
+    return timeline;
+};
+
+ScrollTrigger.create({
+    trigger: '.contentv',
+    start: 'top top',
+    end: '+=' + sections.length * 1000,
+    pin: true,
+    id: 'pinning'
+});
+
+sections.forEach((section, index) => {
+    const timeline = gsap.timeline({
+        scrollTrigger: {
+            id: `section_${index + 1}`,
+            trigger: ".wrap",
+            start: "top top-=" + (index * 1000),
+            end: "+=" + 1000,
+            scrub: true,
+            invalidateOnRefresh: true,
+            markers: true
+        }
+    });
+
+    timeline.add(animateParagraph(section));
+
+});
+
+gsap.delayedCall(0.01, () =>
+    ScrollTrigger.getAll().forEach((t) =>
+        console.log("Start", t.start, "End", t.end, t.vars.id)
+    )
+);
