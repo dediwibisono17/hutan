@@ -28,7 +28,7 @@ setTimeout(() => {
                     endTrigger: '.lasts',
                     start: "center center",
                     end,
-                    markers: true,
+                    markers: false,
                     height: 50,
                     toggleActions: "restart none reverse reset",
                     pinSpacing,
