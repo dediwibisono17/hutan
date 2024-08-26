@@ -102,6 +102,16 @@
 
 .klhk {
     // background: linear-gradient(to bottom, #292018, #835b38);
+
+    .penting {
+        background: #ffffe2;
+        color: #292018;
+        padding: 16px;
+        border-top: 5px solid #da9859;
+        @media screen and (max-width: 768px) {
+            padding: 8px;
+        }
+    }
     p {
         color: white;
     }
