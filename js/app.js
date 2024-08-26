@@ -5,7 +5,7 @@ $(document).ready(function () {
         $("html, body").animate({ scrollTop: 0 }, 10);
         window.scrollTo(0, 0);
 
-    }, 2000);
+    }, 1500);
     new WOW().init();
 })
 
