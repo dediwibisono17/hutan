@@ -82,8 +82,8 @@ sections.forEach((section, index) => {
         scrollTrigger: {
             id: `section_${index + 1}`,
             trigger: ".wrap",
-            start: "top top-=" + (index * 500),
-            end: "+=" + 500,
+            start: "top top-=" + (index * 700),
+            end: "+=" + 700,
             scrub: true,
             invalidateOnRefresh: true,
             markers: false

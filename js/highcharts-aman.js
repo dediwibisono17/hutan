@@ -10,7 +10,7 @@ Highcharts.chart('container-aman', {
     },
     title: {
         text: 'Hak Pengusahaan Hutan',
-        align: 'left',
+        // align: 'left',
         style: {
             // color: "#fafafa",
             font: 'bold 20px "Rubik", sans-serif',
@@ -232,7 +232,7 @@ Highcharts.chart('container-aman-pertambangan', {
 
     },
     title: {
-        text: 'Hutan Tanaman Industri',
+        text: 'Pertambangan',
         style: {
             // color: "#fafafa",
             font: 'bold 20px "Rubik", sans-serif',
@@ -344,7 +344,7 @@ Highcharts.chart('container-aman-perkebunan', {
 
     },
     title: {
-        text: 'Hutan Tanaman Industri',
+        text: 'Perkebunan',
         style: {
             // color: "#fafafa",
             font: 'bold 20px "Rubik", sans-serif',
