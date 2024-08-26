@@ -56,7 +56,8 @@ Highcharts.chart('container-tanahkita', {
         ],
         crosshair: true,
         labels: {
-            // text: null,
+            // title: 'Tahun',
+            // text: 'Tahun',
             // formatter: function () {
             //     // var a = this.y.toString().replace('.', ',');
             //     // return a + '%';
