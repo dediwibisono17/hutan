@@ -643,3 +643,26 @@ section {
         color: white !important;
     }
 }
+
+footer {
+    width: 100vw;
+    height: 8px;
+    position: sticky;
+    bottom: 0;
+    z-index: 18;
+    left: 0;
+    background: #d5d8ce;
+    @media screen and (max-width: 768px) {
+        bottom: 0;
+        height: 10px;
+    }
+}
+
+#footer__progress_bar {
+    height: 8px;
+    // color: #007bff;
+    background: #5d827b;
+    width: 0%;
+    position: relative;
+    text-align: left;
+}
