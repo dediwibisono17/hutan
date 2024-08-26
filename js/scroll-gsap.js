@@ -61,7 +61,7 @@ const animateParagraph = (section) => {
 
     timeline
         .from(paragraph, { opacity: 0, x: -200, lazy: false })
-        .to(paragraph, { opacity: 1, x: 0, scale: 1.1, duration: 2 })
+        .to(paragraph, { opacity: 1, x: 0, scale: 1.05, duration: 2 })
         .to(paragraph, { duration: 10 })
         .to(paragraph, { opacity: 0, scale: 1, x: 200, duration: 2 })
         .to(section, { opacity: 0, duration: 0.5 });
