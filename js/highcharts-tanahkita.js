@@ -71,7 +71,7 @@ Highcharts.chart('container-tanahkita', {
     }],
     yAxis: [{ // Primary yAxis
         labels: {
-            format: '{value:,.0f} ha',
+            // format: '{value:,.0f} ha',
             style: {
                 // color: Highcharts.getOptions().colors[1],
                 color: "#fafafa",
@@ -224,7 +224,7 @@ Highcharts.chart('container-tanahkita-2', {
     }],
     yAxis: [{ // Primary yAxis
         labels: {
-            format: '{value:,.0f} ha',
+            // format: '{value:,.0f} ha',
             style: {
                 color: Highcharts.getOptions().colors[1],
                 color: "#fafafa",
