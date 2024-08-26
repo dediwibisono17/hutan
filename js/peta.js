@@ -1,4 +1,4 @@
-const map = L.map('map').setView([-1.2910469065280155, 112.12226540832819], 4.5, {
+const map = L.map('map', { gestureHandling: true }).setView([-1.2910469065280155, 112.12226540832819], 4.5, {
     // dragging: !L.Browser.mobile,
     touchZoom: false,
     // dragging: false
