@@ -15,7 +15,7 @@ Highcharts.chart('container-fwi', {
 
     },
     subtitle: {
-        text: 'Sumber: FWI (Forest Watch Indonesia)',
+        text: 'Sumber: Forest Watch Indonesia (FWI)',
         align: 'left',
         style: {
             color: "#fafafa",
