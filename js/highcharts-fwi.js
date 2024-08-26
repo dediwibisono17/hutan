@@ -115,7 +115,7 @@ Highcharts.chart('container-fwi', {
             data: [2801740, 2019377, 782362]
         },
         {
-            name: 'HPH (Hak Pengusahaan Hutan)',
+            name: 'Hak Pengusahaan Hutan (HPH)',
             // data: [1402994, 2801740, 11683519, 2624212, 2238246, 89044, 712814, 102560]
             data: [11683519, 10683519, 1102597]
         }, {

@@ -37,7 +37,7 @@ Highcharts.chart('container-klhk', {
         enabled: false,
     },
     subtitle: {
-        text: 'Source: KLHK (Kementerian Lingkungan Hidup dan Kehutanan)',
+        text: 'Source: Kementerian Lingkungan Hidup dan Kehutanan (KLHK)',
         align: 'left',
         style: {
             color: "#fafafa",
