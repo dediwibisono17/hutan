@@ -109,7 +109,7 @@
             background: linear-gradient(to bottom, #ffffe2, #86975c 75%, #ffffe2);
         }
     }
-    .card {
+    .cardxx {
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -124,7 +124,7 @@
         }
     }
 
-    .card--reverse {
+    .cardxx--reverse {
         flex-direction: row-reverse;
     }
     @keyframes MoveUpDownt {
@@ -136,7 +136,7 @@
             bottom: 5px;
         }
     }
-    .card__img-holder {
+    .cardxx__img-holder {
         // animation: MoveUpDownt 1.5s linear infinite;
         width: 100vw;
         height: 100vh;
@@ -191,7 +191,7 @@
         }
     }
 
-    // .card__text {
+    // .cardxx__text {
     //     width: 100%;
     //     position: relative;
     //     z-index: 8;
@@ -210,7 +210,7 @@
     //     }
     // }
 
-    // .card {
+    // .cardxx {
     //     background: #ffffe2 !important;
     // }
 }
@@ -361,9 +361,9 @@
 }
 
 .lasts {
-    margin-top: -40vh;
+    // margin-top: -40vh;
     @media screen and (max-width: 768px) {
         height: 40vh;
-        margin-top: -60vh;
+        // margin-top: -60vh;
     }
 }

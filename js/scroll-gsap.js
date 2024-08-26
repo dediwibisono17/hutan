@@ -12,8 +12,8 @@ setTimeout(() => {
         const pinSpacing = index === targetsHeight.length - 1 ? "true" : false;
         const end =
             index === targetsHeight.length - 1
-                ? `+=${target.offsetHeight}px`
-                : `+=${targetsHeight[index + 1].offsetHeight}px`;
+                ? `+=${target.offsetHeight + 400}px`
+                : `+=${targetsHeight[index + 1].offsetHeight + 400}px`;
         const opacityFirst = index === 0 ? 1 : 0;
         const opacitySecond = index === targetsHeight.length - 1 ? 1 : 0;
         console.log(target.offsetHeight + 100, 'end');
@@ -27,7 +27,7 @@ setTimeout(() => {
                     // scroller: '.wrapper-semua',
                     endTrigger: '.lasts',
                     start: "center center",
-                    end,
+                    end: () => `+=${document.querySelector(".height").offsetHeight + 550}`,
                     markers: false,
                     height: 50,
                     toggleActions: "restart none reverse reset",
@@ -61,7 +61,7 @@ const animateParagraph = (section) => {
 
     timeline
         .from(paragraph, { opacity: 0, x: -200, lazy: false })
-        .to(paragraph, { opacity: 1, x: 0, scale: 1.05, duration: 2 })
+        .to(paragraph, { opacity: 1, x: 0, scale: 1.1, duration: 2 })
         .to(paragraph, { duration: 10 })
         .to(paragraph, { opacity: 0, scale: 1, x: 200, duration: 2 })
         .to(section, { opacity: 0, duration: 0.5 });
@@ -82,8 +82,8 @@ sections.forEach((section, index) => {
         scrollTrigger: {
             id: `section_${index + 1}`,
             trigger: ".wrap",
-            start: "top top-=" + (index * 700),
-            end: "+=" + 700,
+            start: "top top-=" + (index * 500),
+            end: "+=" + 500,
             scrub: true,
             invalidateOnRefresh: true,
             markers: false
