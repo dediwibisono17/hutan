@@ -48,10 +48,7 @@ $colorred: #560418;
     /* right: 0; */
     background-attachment: fixed !important;
     z-index: 999999;
-    background: url(../img/animasi-tanah-kitax-02.png);
-    background-repeat: no-repeat;
-    background-color: #133a33;
-    background-size: cover;
+    background: linear-gradient(to bottom, #c7e8ea 40%, #ffffe2);
     // &::before {
     //     content: "";
     //     position: absolute;
