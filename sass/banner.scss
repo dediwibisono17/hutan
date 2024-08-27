@@ -39,10 +39,13 @@
     z-index: 13;
     // background: ;
     background: linear-gradient(to bottom, #c7e8ea 40%, #ffffe2);
+    // background: url("../img/test-banner.jpg");
+    // background-size: cover;
+    // background-position: 100% 100%;
     .title {
         position: absolute;
         left: 50%;
-        top: 20%;
+        top: 16%;
         z-index: 11;
         // text-shadow: 2px 2px white;
         width: 70%;
@@ -52,7 +55,8 @@
         }
         h2,
         h1 {
-            font-size: 4rem;
+            font-size: 3rem;
+            line-height: 3rem;
             color: #d55050;
             font-family: "Special Elite" !important;
             text-align: center;
@@ -99,6 +103,25 @@
                 left: 50%;
                 top: 80%;
             }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        .objectx {
+            position: absolute;
+            left: 50%;
+            top: 32%;
+            transform: translate(-50%, -50%);
+            width: 22%;
+            height: 50%;
+            z-index: 11;
+            @media screen and (max-width: 768px) {
+                width: 65%;
+                top: 56%;
+            }
+
             img {
                 width: 100%;
                 height: 100%;
