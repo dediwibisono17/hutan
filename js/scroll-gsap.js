@@ -16,7 +16,7 @@ setTimeout(() => {
                 : `+=${targetsHeight[index + 1].offsetHeight + 400}px`;
         const opacityFirst = index === 0 ? 1 : 0;
         const opacitySecond = index === targetsHeight.length - 1 ? 1 : 0;
-        console.log(target.offsetHeight + 100, 'end');
+        // console.log(target.offsetHeight + 100, 'end');
         const tl = gsap
             .timeline({
                 defaults: { duration: 1 },
@@ -96,6 +96,6 @@ sections.forEach((section, index) => {
 
 gsap.delayedCall(0.01, () =>
     ScrollTrigger.getAll().forEach((t) =>
-        console.log("Start", t.start, "End", t.end, t.vars.id)
+        // console.log("Start", t.start, "End", t.end, t.vars.id)
     )
 );
