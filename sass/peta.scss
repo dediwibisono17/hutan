@@ -144,19 +144,23 @@
 }
 
 .tanah-kita-cerita {
-    background: linear-gradient(to top, #add378, #ffffe2);
+    background: linear-gradient(to top, #ecfcd6, #ffffe2);
+    padding: 0;
     // background: linear-gradient(to top, #7fa648, #ebebcc);
     .kartu {
         position: relative;
         // overflow-y: ;
         width: 100%;
         height: auto;
-        margin-bottom: 24px;
+        // margin-bottom: 24px;
         .mulai {
             width: 100%;
             overflow: hidden;
             position: relative;
             height: 490px;
+            @media screen and (max-width: 768px) {
+                height: 235px;
+            }
             &::before {
                 content: "";
                 position: absolute;
@@ -166,7 +170,9 @@
                 bottom: 0;
                 width: 100%;
                 height: auto;
-                background: linear-gradient(45deg, #9bd936, #538026);
+                // border-radius: 8px 8px 0 0;
+                // background: linear-gradient(45deg, #9bd936, #538026);
+                background: linear-gradient(45deg, #8ebd41, #8cc157);
                 // 9bd936
                 // 538026
             }
@@ -181,12 +187,48 @@
                 width: 72%;
                 height: auto;
                 position: absolute;
+                transform: rotate(-1deg);
                 left: 15%;
                 bottom: 0%;
             }
+            @keyframes buldoser {
+                0% {
+                    bottom: 15%;
+                    left: 18%;
+                    opacity: 0;
+                }
+                20% {
+                    bottom: 15%;
+                    left: 18%;
+                    opacity: 1;
+                }
+                50% {
+                    bottom: 45%;
+                    left: 48%;
+                    opacity: 1;
+                }
+                80% {
+                    bottom: 45%;
+                    left: 48%;
+                    opacity: 1;
+                }
+                90% {
+                    bottom: 45%;
+                    left: 48%;
+                    opacity: 0;
+                }
+                100% {
+                    bottom: 45%;
+                    left: 48%;
+                    opacity: 0;
+                }
+            }
             .buldoser {
                 width: 35%;
+                opacity: 0;
                 position: absolute;
+                animation: buldoser 5s linear infinite;
+                filter: drop-shadow(1px 4px 1px rgba(54, 34, 29, 0.5));
                 left: 18%;
                 bottom: 15%;
                 height: auto;
