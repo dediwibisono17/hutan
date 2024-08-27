@@ -118,7 +118,7 @@
             transform: translate(-50%, -50%);
             width: 22%;
             height: 50%;
-            z-index: 11;
+            z-index: 12;
             @media screen and (max-width: 768px) {
                 width: 65%;
                 top: 56%;
@@ -171,17 +171,18 @@
             text-align: center;
             position: absolute;
             left: 50%;
-            z-index: 12;
             bottom: 0;
             width: 40%;
             &.muter {
                 transform: translate(50%, 0) rotate(360deg);
+                z-index: 12;
                 animation-name: bumis;
                 animation-duration: 500s;
                 animation-iteration-count: infinite;
                 animation-timing-function: linear;
             }
             &.hanya {
+                z-index: 11;
                 animation-name: hanya;
                 animation-duration: 102s;
                 animation-iteration-count: infinite;
