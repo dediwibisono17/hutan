@@ -107,6 +107,22 @@
 
 .peta-tanah-kita {
     background: #292018 !important;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        transform: translate(0, -50%);
+        width: 0;
+        height: 0;
+        left: 50%;
+        z-index: 5;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        @media screen and (max-width: 768px) {
+            left: 45%;
+        }
+        border-top: 40px solid #ffffe2 !important;
+    }
     .wrap-detikx {
         h3 {
             color: white !important;
