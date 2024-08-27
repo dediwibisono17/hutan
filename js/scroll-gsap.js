@@ -94,8 +94,8 @@ sections.forEach((section, index) => {
 
 });
 
-gsap.delayedCall(0.01, () =>
-    ScrollTrigger.getAll().forEach((t) =>
-        // console.log("Start", t.start, "End", t.end, t.vars.id)
-    )
-);
+// gsap.delayedCall(0.01, () =>
+//     ScrollTrigger.getAll().forEach((t) =>
+//         console.log("Start", t.start, "End", t.end, t.vars.id)
+//     )
+// );
