@@ -159,6 +159,7 @@
         overflow: hidden;
         position: relative;
         height: 490px;
+        filter: drop-shadow(2px 3px 4px #bbb);
         @media screen and (max-width: 768px) {
             height: 235px;
         }
