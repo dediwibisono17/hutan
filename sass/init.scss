@@ -431,18 +431,29 @@ section {
 //titip animasi
 .dashboard-content {
     display: none;
-    // color: red;
 }
 
 #nav.no_index,
 #share {
-    z-index: 21;
+    z-index: 19 !important;
 }
-
+#nav.dark {
+    background: rgba(0,0,0,.75) !important;
+}
 .footer {
-    z-index: 22;
+    z-index: 19;
 }
-
+.share_icon {
+    color: white !important;
+    > a {
+        padding: 2px 0 !important;
+        @media screen and (max-width: 768px) {
+            padding: 0 !important;
+            width: 28px;
+            height: 28px;
+        }
+    }
+}
 .share_icon > a i {
     font-size: 25px !important;
     line-height: initial !important;
@@ -455,15 +466,12 @@ section {
 }
 
 #nav {
-
+    // background: rgb(105 84 29 / 80%) !important;
     // background: rgb(80, 80, 80, 0.8) !important;
-    backdrop-filter: blur(11px);
+    // backdrop-filter: blur(11px);
     @media screen and (max-width: 766px) {
         // backdrop-filter: initial;
         // background: rgb(80, 80, 80, 0.8) !important;
-    }
-    &.dark {
-        background: rgba(0,0,0,.6) !important;
     }
 }
 .bg-blues {
@@ -516,7 +524,7 @@ section {
                 bottom: 0;
                 transform: initial;
                 h2 {
-                    font-family: "Rubik" !important;
+                    font-family: "Zain" !important;
                     font-size: 1.2rem;
                 }
             }
@@ -583,11 +591,11 @@ section {
 }
 #play-button {
     position: relative;
-    z-index: 19;
+    z-index: 16;
     right: 16px;
     top: 90px;
     @media screen and (max-width: 768px) {
-        top: 80px;
+        top: 90px;
     }
     .teks {
         position: absolute;

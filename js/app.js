@@ -213,7 +213,7 @@ $(".lihat-lain").click(function () {
 $('#aman li').click(function () {
     // alert('aman')
     $('html, body').animate({
-        scrollTop: $("#data-aman-scroll").offset().top - 30
+        scrollTop: $("#data-aman-scroll").offset().top - 100
     }, 500);
     $('#aman li ').removeClass("active");
     $(this).addClass("active");
