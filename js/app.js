@@ -51,7 +51,7 @@ $('.slider-navx').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     asNavFor: '.slider-forx',
-    dots: true,
+    dots: false,
     centerMode: true,
     focusOnSelect: true,
     responsive: [

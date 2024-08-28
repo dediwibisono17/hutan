@@ -2,6 +2,51 @@
     padding: 0;
     // z-index: 23;
 
+    .bg-hutan-tutup {
+        position: absolute;
+        bottom: -40px;
+        float: right;
+        right: 0;
+        width: 50%;
+        height: auto;
+        z-index: 6;
+        &::before {
+            // content: "";
+            position: absolute;
+            right: 0;
+            width: 100%;
+            height: 40px;
+            bottom: 0;
+            background: linear-gradient(to top, #ffffe2, transparent);
+        }
+        @media screen and (max-width: 768px) {
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: auto;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .bg-hutanx {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+        z-index: 3;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
     .wrapper-semua {
         // background-image: url("../img/bgbg_daun.png");
         // background-attachment: fixed;
