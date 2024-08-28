@@ -455,16 +455,19 @@ section {
 }
 
 #nav {
-    // background: rgb(105 84 29 / 80%) !important;
+
     // background: rgb(80, 80, 80, 0.8) !important;
     backdrop-filter: blur(11px);
     @media screen and (max-width: 766px) {
         // backdrop-filter: initial;
         // background: rgb(80, 80, 80, 0.8) !important;
     }
+    &.dark {
+        background: rgba(0,0,0,.6) !important;
+    }
 }
 .bg-blues {
-    background: #fafafa !important;
+    background: #ffffe2 !important;
 }
 
 .share_icon > a {
@@ -582,7 +585,7 @@ section {
     position: relative;
     z-index: 19;
     right: 16px;
-    top: 62px;
+    top: 90px;
     @media screen and (max-width: 768px) {
         top: 80px;
     }
