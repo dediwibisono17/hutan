@@ -27,7 +27,7 @@ setTimeout(() => {
                     // scroller: '.wrapper-semua',
                     endTrigger: '.lasts',
                     start: "center center",
-                    end: () => `+=${document.querySelector(".height").offsetHeight + 300}`,
+                    end: () => `+=${document.querySelector(".height").offsetHeight + 350}`,
                     markers: false,
                     height: 50,
                     toggleActions: "restart none reverse reset",
