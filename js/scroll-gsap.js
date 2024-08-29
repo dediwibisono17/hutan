@@ -12,8 +12,8 @@ setTimeout(() => {
         const pinSpacing = index === targetsHeight.length - 1 ? "true" : false;
         const end =
             index === targetsHeight.length - 1
-                ? `+=${target.offsetHeight + 400}px`
-                : `+=${targetsHeight[index + 1].offsetHeight + 400}px`;
+                ? `+=${target.offsetHeight }px`
+                : `+=${targetsHeight[index + 1].offsetHeight}px`;
         const opacityFirst = index === 0 ? 1 : 0;
         const opacitySecond = index === targetsHeight.length - 1 ? 1 : 0;
         // console.log(target.offsetHeight + 100, 'end');
@@ -27,7 +27,7 @@ setTimeout(() => {
                     // scroller: '.wrapper-semua',
                     endTrigger: '.lasts',
                     start: "center center",
-                    end: () => `+=${document.querySelector(".height").offsetHeight + 550}`,
+                    end: () => `+=${document.querySelector(".height").offsetHeight + 300}`,
                     markers: false,
                     height: 50,
                     toggleActions: "restart none reverse reset",
